@@ -1,0 +1,91 @@
+@mixin maxw1920 {
+    @media screen and (max-width: 1920px) {
+        @content;
+    }
+}
+@mixin maxw1600 {
+    @media screen and (max-width: 1600px) {
+        @content;
+    }
+}
+@mixin maxw1440 {
+    @media screen and (max-width: 1440px) {
+        @content;
+    }
+}
+@mixin responsive {
+    @media screen and (max-width: calc(#{$container-inner-width} + 2*#{$container-padding-x})) {
+        @content;
+    }
+}
+@mixin maxw1366 {
+    @media screen and (max-width: 1366px) {
+        @content;
+    }
+}
+@mixin maxw1280 {
+    @media screen and (max-width: 1280px) {
+        @content;
+    }
+}
+@mixin maxw1200 {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+@mixin not-touch {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+@mixin touch {
+    @media screen and (max-width: 1023px) {
+        @content;
+    }
+}
+@mixin maxw860 {
+    @media screen and (max-width: 860px) {
+        @content;
+    }
+}
+@mixin not-mobile {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+@mixin maxw640 {
+    @media screen and (max-width: 640px) {
+        @content;
+    }
+}
+@mixin maxw480 {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+@mixin maxw375 {
+    @media screen and (max-width: 375px) {
+        @content;
+    }
+}
+
+@function css-function($function, $values...) {
+    @return $function + unquote("(") + $values + unquote(")");
+}
+
+@function css-min($values...) {
+    @return css-function(min, $values);
+}
+
+@function css-max($values...) {
+    @return css-function(max, $values);
+}
+
+@function css-clamp($values...) {
+    @return css-function(clamp, $values);
+}

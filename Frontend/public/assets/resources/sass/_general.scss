@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    &:focus,
+    &:active {
+        outline: 0;
+    }
+}
+body {
+    font-family: $main-font, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+    background: $body-bg;
+    color: $text;
+    @include mobile {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &.with-bg {
+        // background: transparent url('../img/body-bg.svg') top center no-repeat;
+        background: transparent url('../img/body-bg.png') top center no-repeat;
+        // background-size: auto 1285px;
+        background-size: cover;
+    }
+    &.menu-open {
+        // height: 100vh;
+        overflow: hidden;
+    }
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: $duration;
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+    &:active,
+    &:focus {
+        outline: 0;
+    }
+}
+
+p {
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    flex-shrink: 0;
+}
+button {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    font-size: inherit;
+    color: inherit;
+    &:hover {
+        cursor: pointer;
+    }
+    &:active,
+    &:focus {
+        outline: 0;
+    }
+}
+label {
+    cursor: pointer;
+}
+
+input,
+textarea {
+    font-family: $main-font;
+    &::placeholder {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        opacity: 1;
+    }
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+svg {
+    display: inline-block;
+}
+
+iframe {
+    width: 100%;
+    border: 0;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 72px;
+    @include mobile {
+        padding-top: 54px;
+    }
+}
+
+// .inner-page .content {
+//     padding-top: 72px;
+//     @include mobile {
+//         padding-top: 54px;
+//     }
+// }
+
+header,
+main,
+footer {
+    width: 100%;
+}
+
+main {
+    flex-grow: 1;
+    > .container {
+        max-width: initial;
+        padding: 0;
+    }
+}
+
+.inner-page main {
+    padding-top: 72px;
+    @include mobile {
+        padding-top: 54px;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: calc(#{$container-inner-width} + 2*#{$container-padding-x});
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 $container-padding-x;
+    position: relative;
+    z-index: 2;
+    @include maxw1366 {
+        padding: 0 48px;
+    }
+    @include maxw1280 {
+        padding: 0 40px;
+    }
+    @include maxw1200 {
+        padding: 0 32px;
+    }
+    @include touch {
+        padding: 0 $container-padding-x-mobile;
+    }
+    // @include mobile {
+    //     padding: 0 $container-padding-x-mobile;
+    // }
+}
+
+section {
+    &:last-child {
+        margin-bottom: 104px;
+        @include touch {
+            margin-bottom: 80px;
+        }
+        @include mobile {
+            margin-bottom: 48px;
+        }
+    }
+}
+
+.iti__flag {background-image: url("../../resources/img/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("../../resources/img/flags@2x.png");}
+}
+
+.iti--allow-dropdown {
+  width: 100%;
+}
+
+.error {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #CC261A;
+}
+
+.model-select {
+  display: flex !important;
+  align-items: center;
+  width: 100% !important;
+  height: 42px !important;
+  background-color: #EEF1FB !important;
+  border-radius: 8px !important;
+  border: 0 !important;
+  color: #28303B !important;
+  font-size: 14px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  transition: 0.3s !important;
+  border: 1px solid transparent !important;
+
+  .select2-selection__placeholder {
+    color: #28303B !important;
+  }
+
+  .select2-selection__arrow {
+    display: none;
+  }
+}
+.model-dropdown {
+  background-color: #EEF1FB !important;
+  border: 1px solid transparent !important;
+  .select2-search__field {
+    background-color: #EEF1FB !important;
+    color: #28303B !important;
+  }
+}

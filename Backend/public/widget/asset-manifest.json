@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "./static/css/main.1edab87a.css",
+    "main.js": "./static/js/main.83e353c6.js",
+    "static/media/MobileWidgetBackground1.png": "./static/media/MobileWidgetBackground1.d204e982b57915204ff4.png",
+    "index.html": "./index.html",
+    "static/media/FileIcon.svg": "./static/media/FileIcon.a42d6fa4b6cfbbe1b01943ad8829c82d.svg",
+    "static/media/HeadphonesIcon.svg": "./static/media/HeadphonesIcon.b192d56f04ad0d82853d5cadd81c5b11.svg",
+    "static/media/AutoInsurance.svg": "./static/media/AutoInsurance.0ebc3f6176deb7a4dbdd3931bb7c35a4.svg",
+    "static/media/Google.svg": "./static/media/Google.0b012ec939db2fe5fe6eadae79d91154.svg",
+    "static/media/Apple.svg": "./static/media/Apple.085ec2c020be69d4087dfe68d70a0f4a.svg",
+    "static/media/HealthInsurance.svg": "./static/media/HealthInsurance.7b3b2ebdb6c0072faf874146d9812080.svg",
+    "static/media/TurInsurance.svg": "./static/media/TurInsurance.112e75ea8cf7fceee23463f1fba4f2c9.svg",
+    "static/media/BuildInsurance.svg": "./static/media/BuildInsurance.7a81d81bdb3a9cf4a7703ed11cedc4e8.svg",
+    "static/media/Facebook.svg": "./static/media/Facebook.27ec6123e6347ff9303e65d79dbd8367.svg",
+    "static/media/LeftArrow.svg": "./static/media/LeftArrow.9c64babaee6f6a98463722b3f64759ca.svg"
+  },
+  "entrypoints": [
+    "static/css/main.1edab87a.css",
+    "static/js/main.83e353c6.js"
+  ]
+}

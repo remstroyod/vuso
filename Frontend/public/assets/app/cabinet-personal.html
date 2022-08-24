@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>VUSO</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/site.webmanifest">
+        <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+    </head>
+
+    <!-- if inner page body.inner-page -->
+    <!-- if bg body.with-bg -->
+    <body class="inner-page">
+        <div class="wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <!-- if inner page a.logo -->
+                        <a href="/" class="col-auto header__logo">
+                            <picture>
+                                <source srcset="img/logo.svg" media="(min-width: 768px)">
+                                <img src="img/logo-mobile.svg" alt="">
+                            </picture>
+                        </a>
+                        <div class="col-auto header__menu">
+
+                            <button class="header__btn header__menu__btn black">
+                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 1.00008C0.5 0.539844 0.873096 0.166748 1.33333 0.166748H14.6667C15.1269 0.166748 15.5 0.539844 15.5 1.00008C15.5 1.46032 15.1269 1.83341 14.6667 1.83341H1.33333C0.873096 1.83341 0.5 1.46032 0.5 1.00008Z" fill="currentColor"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 6.00008C0.5 5.53984 0.873096 5.16675 1.33333 5.16675H14.6667C15.1269 5.16675 15.5 5.53984 15.5 6.00008C15.5 6.46032 15.1269 6.83342 14.6667 6.83342H1.33333C0.873096 6.83342 0.5 6.46032 0.5 6.00008Z" fill="currentColor"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 11.0001C0.5 10.5398 0.873096 10.1667 1.33333 10.1667H14.6667C15.1269 10.1667 15.5 10.5398 15.5 11.0001C15.5 11.4603 15.1269 11.8334 14.6667 11.8334H1.33333C0.873096 11.8334 0.5 11.4603 0.5 11.0001Z" fill="currentColor"/>
+                                </svg>
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8432 1.1568C13.3856 1.69919 13.3856 2.57859 12.8432 3.12098L3.12098 12.8432C2.57859 13.3856 1.69919 13.3856 1.1568 12.8432C0.614401 12.3008 0.614401 11.4214 1.1568 10.879L10.879 1.1568C11.4214 0.614401 12.3008 0.614401 12.8432 1.1568Z" fill="#151826"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.1568 1.1568C1.69919 0.614401 2.57859 0.614401 3.12098 1.1568L12.8432 10.879C13.3856 11.4214 13.3856 12.3008 12.8432 12.8432C12.3008 13.3856 11.4214 13.3856 10.879 12.8432L1.1568 3.12098C0.614401 2.57859 0.614401 1.69919 1.1568 1.1568Z" fill="#151826"/>
+                                </svg>
+
+                                <span>
+                                    Меню
+                                </span>
+                            </button>
+
+                            <div class="header__dropdown-menu header__site-menu">
+                                <div class="container">
+                                    <form action="/" class="search header__search">
+                                        <input type="text" placeholder="Поиск">
+                                        <button type="submit"></button>
+                                    </form>
+                                    <div class="header__site-menu__content">
+                                        <div class="header__site-menu__group main">
+                                            <a href="/">Оплатить онлайн</a>
+                                            <a href="/">О компании</a>
+                                            <a href="/">Представительства</a>
+                                            <a href="/">Новости и акции</a>
+                                            <a href="/">Партнеры</a>
+                                            <a href="/">Юридическая информация</a>
+                                        </div>
+                                        <div class="header__site-menu__group secondary">
+                                            <a href="/" class="trigger">Клиентам</a>
+                                            <a href="/">Поддержка</a>
+                                            <a href="/">Ассистент-боты</a>
+                                            <a href="/">FAQ</a>
+                                            <a href="/">Оплата и доставка</a>
+                                            <a href="/">Публичные оферты</a>
+                                        </div>
+                                        <div class="header__site-menu__lang-phone">
+                                            <div class="header__site-menu__lang">
+                                                <a href="/">RU</a>
+                                            </div>
+                                            <div class="header__site-menu__phone">
+                                                <a href="tel:098 765 86 42">098 765 86 42</a>
+                                            </div>
+                                        </div>
+                                        <div class="header__site-menu__socials">
+                                            <a href="/" class="header__site-menu__social facebook" rel="noindex nofollow noreferrer" target="_blank">
+                                                <svg width="8" height="18" viewBox="0 0 8 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.31965 17.4001V8.99911H7.68636L8 6.10409H5.31965L5.32367 4.6551C5.32367 3.90003 5.39689 3.49545 6.50367 3.49545H7.98324V0.600098H5.6162C2.773 0.600098 1.77227 2.0045 1.77227 4.36625V6.10442H0V8.99944H1.77227V17.4001H5.31965Z" fill="#151826"/>
+                                                </svg>
+                                            </a>
+                                            <a href="/" class="header__site-menu__social tiktok" rel="noindex nofollow noreferrer" target="_blank">
+                                                <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7914 4.75979C15.7505 4.75979 14.7901 4.41495 14.0188 3.83322C13.1343 3.16634 12.4987 2.18811 12.2743 1.06062C12.2187 0.782044 12.1888 0.49456 12.186 0.199951H9.21244V8.32502L9.20888 12.7755C9.20888 13.9653 8.43406 14.9742 7.36001 15.329C7.0483 15.432 6.71165 15.4808 6.36112 15.4615C5.91368 15.4369 5.49439 15.3019 5.12996 15.0839C4.35443 14.6201 3.82862 13.7787 3.81437 12.8161C3.79193 11.3117 5.00813 10.0852 6.51145 10.0852C6.80819 10.0852 7.09318 10.1336 7.36001 10.2216V8.00084V7.20251C7.07858 7.16083 6.79216 7.1391 6.50254 7.1391C4.85708 7.1391 3.31813 7.82308 2.21807 9.05531C1.38661 9.98651 0.887882 11.1746 0.810935 12.4203C0.71012 14.0569 1.30895 15.6126 2.47029 16.7604C2.64093 16.9289 2.82011 17.0853 3.0075 17.2295C4.00318 17.9958 5.22044 18.4112 6.50254 18.4112C6.79216 18.4112 7.07858 18.3898 7.36001 18.3481C8.55768 18.1707 9.66272 17.6225 10.5348 16.7604C11.6064 15.7013 12.1984 14.2952 12.2048 12.7987L12.1895 6.15268C12.7007 6.54704 13.2597 6.87335 13.8596 7.12664C14.7925 7.52028 15.7818 7.71977 16.7999 7.71942V5.56026V4.75908C16.8007 4.75979 16.7921 4.75979 16.7914 4.75979Z" fill="#151826"/>
+                                                </svg>
+                                            </a>
+                                            <a href="/" class="header__site-menu__social instagram" rel="noindex nofollow noreferrer" target="_blank">
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.60072 0C6.42804 0 6.15537 0.0095 5.30202 0.0483333C4.45035 0.0873333 3.86901 0.222167 3.36034 0.42C2.83417 0.624333 2.38783 0.897667 1.94316 1.3425C1.49815 1.78717 1.22482 2.2335 1.01981 2.7595C0.821478 3.26833 0.686476 3.84983 0.648143 4.70117C0.609976 5.5545 0.599976 5.82733 0.599976 8C0.599976 10.1727 0.609642 10.4445 0.648309 11.2978C0.687476 12.1495 0.822311 12.7308 1.01998 13.2395C1.22448 13.7657 1.49782 14.212 1.94266 14.6567C2.38716 15.1017 2.8335 15.3757 3.35934 15.58C3.86834 15.7778 4.44985 15.9127 5.30136 15.9517C6.1547 15.9905 6.4272 16 8.59973 16C10.7726 16 11.0444 15.9905 11.8978 15.9517C12.7494 15.9127 13.3314 15.7778 13.8404 15.58C14.3665 15.3757 14.8121 15.1017 15.2566 14.6567C15.7016 14.212 15.975 13.7657 16.18 13.2397C16.3766 12.7308 16.5116 12.1493 16.5516 11.298C16.59 10.4447 16.6 10.1727 16.6 8C16.6 5.82733 16.59 5.55467 16.5516 4.70133C16.5116 3.84967 16.3766 3.26833 16.18 2.75967C15.975 2.2335 15.7016 1.78717 15.2566 1.3425C14.8116 0.8975 14.3666 0.624167 13.8399 0.42C13.3299 0.222167 12.7483 0.0873333 11.8966 0.0483333C11.0433 0.0095 10.7716 0 8.59823 0L8.60072 0Z" fill="#151826"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1611 2.76997C12.471 2.76997 11.9111 3.3292 11.9111 4.01952C11.9111 4.70962 12.471 5.26951 13.1611 5.26951C13.8512 5.26951 14.4111 4.70962 14.4111 4.01952C14.4111 3.32942 13.8512 2.76953 13.1611 2.76953V2.76997Z" fill="white"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.60065 5.3335C10.0733 5.3335 11.2673 6.52733 11.2673 8.00016C11.2673 9.47283 10.0733 10.6668 8.60065 10.6668C7.12781 10.6668 5.93396 9.47283 5.93396 8.00016C5.93396 6.52733 7.12781 5.3335 8.60065 5.3335V5.3335Z" stroke="white" stroke-width="2"/>
+                                                </svg>
+                                            </a>
+                                            <a href="/" class="header__site-menu__social twitter" rel="noindex nofollow noreferrer" target="_blank">
+                                                <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20.4001 0.00896646C19.5295 0.611275 18.5656 1.07195 17.5455 1.37323C16.998 0.755757 16.2704 0.318104 15.461 0.119469C14.6517 -0.0791667 13.7996 -0.0292013 13.0202 0.262607C12.2407 0.554416 11.5714 1.07399 11.1028 1.75105C10.6342 2.42812 10.3889 3.23001 10.4001 4.04827V4.93995C8.80248 4.98058 7.21943 4.63305 5.79191 3.92829C4.3644 3.22354 3.13674 2.18345 2.21827 0.900645C2.21827 0.900645 -1.4181 8.92575 6.76372 12.4925C4.89147 13.739 2.66114 14.364 0.400085 14.2758C8.5819 18.7342 18.5819 14.2758 18.5819 4.02152C18.5811 3.77315 18.5567 3.52539 18.5092 3.28143C19.437 2.38395 20.0917 1.25082 20.4001 0.00896646Z" fill="black"/>
+                                                </svg>
+                                            </a>
+                                            <a href="/" class="header__site-menu__social youtube" rel="noindex nofollow noreferrer" target="_blank">
+                                                <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M22.7184 2.34799C22.5943 1.88753 22.3413 1.46563 21.9853 1.12491C21.6292 0.784192 21.1825 0.536725 20.6904 0.407503C18.8923 8.67467e-08 11.6999 0 11.6999 0C11.6999 0 4.50757 2.89156e-08 2.70948 0.446313C2.21735 0.575535 1.77069 0.823002 1.41459 1.16372C1.05849 1.50444 0.805584 1.92634 0.681402 2.3868C0.352326 4.08042 0.191356 5.79849 0.200518 7.5194C0.188788 9.25328 0.349768 10.9844 0.681402 12.6908C0.818307 13.137 1.07688 13.5428 1.43215 13.8692C1.78742 14.1955 2.22736 14.4313 2.70948 14.5537C4.50757 15 11.6999 15 11.6999 15C11.6999 15 18.8923 15 20.6904 14.5537C21.1825 14.4245 21.6292 14.177 21.9853 13.8363C22.3413 13.4956 22.5943 13.0737 22.7184 12.6132C23.045 10.9323 23.2059 9.22736 23.1993 7.5194C23.2111 5.78553 23.0501 4.05436 22.7184 2.34799Z" fill="black"/>
+                                                    <path d="M10.2001 10L14.2001 7.5L10.2001 5V10Z" fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                            <a href="/" class="header__site-menu__social telegram" rel="noindex nofollow noreferrer" target="_blank">
+                                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.52246 15.0309C7.98226 15.0309 8.18541 14.8303 8.44205 14.5923L10.8943 12.3179L7.83543 10.5586" fill="#151826"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.83511 10.559L15.247 15.7821C16.0928 16.2272 16.7032 15.9967 16.9139 15.0331L19.931 1.47242C20.2398 0.291209 19.4589 -0.244533 18.6497 0.105846L0.93382 6.6215C-0.275459 7.08414 -0.268408 7.72763 0.713393 8.01436L5.2597 9.3678L15.7849 3.03429C16.2818 2.7469 16.7378 2.90141 16.3635 3.21825" fill="#151826"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                        <div class="header__site-menu__footer">
+                                            <div class="header__dropdown-menu__button header__dropdown-menu__offer">
+                                                <a href="/">
+                                                    <span>Предложения для бизнеса</span>
+                                                </a>
+                                            </div>
+                                            <div class="header__dropdown-menu__chats header__site-menu__chats">
+                                                <a href="/" class="header__dropdown-menu__chat telegram" rel="noindex nofollow noreferrer">
+                                                    Telegram-бот
+                                                </a>
+                                                <a href="/" class="header__dropdown-menu__chat viber" rel="noindex nofollow noreferrer">
+                                                    Viber-бот
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto header__insurance-case">
+                            <button class="header__btn header__insurance-case__btn red">
+                                <span>Страховой случай</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.98992 0.501674C5.98608 0.534478 4.07565 1.35452 2.6716 2.78454C1.96908 3.48395 1.4148 4.31782 1.04187 5.2363C0.66895 6.15478 0.485047 7.13902 0.501157 8.13019C0.500004 9.0987 0.689994 10.0579 1.06024 10.9529C1.43048 11.8478 1.9737 12.6609 2.65876 13.3455C3.34383 14.0302 4.15726 14.5729 5.05246 14.9426C5.94766 15.3123 6.90702 15.5017 7.87555 15.5H8.00929C10.0137 15.4794 11.9281 14.6645 13.3324 13.2341C14.7367 11.8037 15.5163 9.87464 15.4999 7.87022C15.5022 6.88997 15.3085 5.91914 14.9301 5.01485C14.5518 4.11055 13.9964 3.29104 13.2967 2.6045C12.597 1.91797 11.767 1.37827 10.8557 1.01714C9.94434 0.656018 8.96998 0.48076 7.98992 0.501674ZM7.06312 10.8393C7.05861 10.7167 7.07859 10.5945 7.12186 10.4798C7.16514 10.3651 7.23086 10.2601 7.31518 10.1711C7.3995 10.0821 7.50072 10.0108 7.61292 9.96131C7.72513 9.91186 7.84607 9.88528 7.96867 9.88312H7.98554C8.23215 9.88359 8.46901 9.97952 8.64645 10.1508C8.82389 10.322 8.92813 10.5553 8.93734 10.8018C8.94193 10.9243 8.92202 11.0466 8.87877 11.1613C8.83552 11.2761 8.76981 11.3811 8.68547 11.4701C8.60114 11.5591 8.49989 11.6305 8.38764 11.6799C8.2754 11.7293 8.15442 11.7558 8.03179 11.7579H8.01492C7.7684 11.7571 7.53172 11.6611 7.35435 11.4899C7.17698 11.3187 7.07263 11.0856 7.06312 10.8393ZM7.37559 8.3133V4.56372C7.37559 4.39798 7.44144 4.23902 7.55864 4.12183C7.67584 4.00463 7.8348 3.93879 8.00054 3.93879C8.16629 3.93879 8.32525 4.00463 8.44245 4.12183C8.55965 4.23902 8.62549 4.39798 8.62549 4.56372V8.3133C8.62549 8.47904 8.55965 8.63799 8.44245 8.75519C8.32525 8.87239 8.16629 8.93823 8.00054 8.93823C7.8348 8.93823 7.67584 8.87239 7.55864 8.75519C7.44144 8.63799 7.37559 8.47904 7.37559 8.3133Z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="col-auto header__auth">
+                            <button class="header__btn header__auth-btn black" data-bs-toggle="modal" data-bs-target="#modal-auth">
+                                <span>Войти</span>
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.90541 7.72557C7.89691 7.72557 8.75536 7.36954 9.45698 6.66711C10.1584 5.96478 10.5141 5.10545 10.5141 4.11267C10.5141 3.12024 10.1585 2.26079 9.45687 1.55824C8.75525 0.856026 7.8968 0.5 6.90541 0.5C5.91379 0.5 5.05545 0.856026 4.35395 1.55835C3.65244 2.26067 3.29671 3.12013 3.29671 4.11267C3.29671 5.10545 3.65244 5.9649 4.35395 6.66722C5.05568 7.36943 5.91413 7.72557 6.90541 7.72557Z" fill="currentColor"/>
+                                    <path d="M13.2196 12.0343C13.1994 11.742 13.1585 11.4232 13.0983 11.0865C13.0374 10.7473 12.9591 10.4266 12.8654 10.1335C12.7685 9.8306 12.6369 9.53145 12.474 9.24477C12.3052 8.94723 12.1067 8.68813 11.8841 8.47493C11.6512 8.25189 11.3661 8.07256 11.0365 7.94175C10.708 7.81163 10.3439 7.74571 9.95445 7.74571C9.80151 7.74571 9.65359 7.80854 9.36794 7.99474C9.19213 8.10952 8.98649 8.24227 8.75696 8.3891C8.5607 8.5143 8.29482 8.6316 7.96641 8.7378C7.64601 8.8416 7.32069 8.89424 6.99948 8.89424C6.67851 8.89424 6.35319 8.8416 6.03255 8.7378C5.70449 8.63171 5.4385 8.51441 5.24257 8.38921C5.01521 8.24376 4.80946 8.11101 4.63103 7.99462C4.3456 7.80843 4.19769 7.7456 4.04474 7.7456C3.65518 7.7456 3.29123 7.81163 2.96282 7.94186C2.63339 8.07244 2.34819 8.25177 2.11512 8.47504C1.89244 8.68836 1.69401 8.94734 1.52529 9.24477C1.36263 9.53145 1.23095 9.83048 1.13401 10.1336C1.04039 10.4267 0.962094 10.7473 0.901282 11.0865C0.840928 11.4227 0.80012 11.7416 0.779888 12.0346C0.759998 12.3211 0.749939 12.6192 0.749939 12.9204C0.749939 13.7034 0.998558 14.3373 1.48882 14.8048C1.97303 15.2661 2.61361 15.5 3.39285 15.5H10.607C11.386 15.5 12.0266 15.2661 12.5109 14.8048C13.0013 14.3376 13.2499 13.7035 13.2499 12.9203C13.2498 12.618 13.2397 12.3199 13.2196 12.0343Z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="col-auto header__insure">
+                            <button class="header__btn header__insure-btn black">
+                                <span>Застраховать</span>
+                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.123078 1.2098L4.2704 7.61558C4.34637 7.73291 4.45343 7.82993 4.58124 7.89728C4.70905 7.96462 4.85329 8 5 8C5.14671 8 5.29095 7.96462 5.41876 7.89728C5.54657 7.82993 5.65363 7.73291 5.7296 7.61558L9.87692 1.2098C9.95515 1.08889 9.99759 0.950714 9.9999 0.809424C10.0022 0.668135 9.96431 0.52881 9.89008 0.405718C9.81584 0.282626 9.70794 0.180189 9.57743 0.108899C9.44692 0.0376082 9.29848 2.58748e-05 9.14732 0L0.852676 6.52627e-07C0.701516 2.65512e-05 0.553079 0.0376089 0.422566 0.108899C0.292054 0.18019 0.184157 0.282627 0.109924 0.405719C0.0356902 0.528811 -0.00221169 0.668136 9.97367e-05 0.809425C0.00241117 0.950714 0.0448523 1.08889 0.123078 1.2098Z" fill="currentColor"/>
+                                </svg>
+                            </button>
+
+                            <div class="header__dropdown-menu header__insure-menu">
+                                <div class="container">
+                                    <form action="/" class="search header__search">
+                                        <input type="text" placeholder="Поиск">
+                                        <button type="submit"></button>
+                                    </form>
+                                    <div class="header__insure-menu__sections">
+                                        <div class="header__insure-menu__card">
+                                            <div class="header__insure-menu__card-image">
+                                                <img src="img/temp/card-1.jpg" alt="">
+                                            </div>
+                                            <div class="header__insure-menu__card-info">
+                                                <a href="/" class="header__insure-menu__card-link">
+                                                    <span class="icon">
+                                                        <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M15.895 5.59755L14.7548 1.73449C14.4948 0.853495 13.7123 0.261963 12.8078 0.261963H5.17497C4.27048 0.261963 3.48804 0.853496 3.22805 1.73449L2.08782 5.59755C1.36784 5.91556 0.862381 6.64382 0.862381 7.49147V11.6226C0.862381 12.193 1.31736 12.6554 1.87851 12.6554H1.87857L1.87851 13.6881C1.87851 14.2585 2.33342 14.721 2.89464 14.721H3.91083C4.47198 14.721 4.92696 14.2585 4.92696 13.6882L4.92652 12.6554H13.0559L13.0559 13.6881C13.0559 14.2585 13.5108 14.721 14.072 14.721H15.0882C15.6494 14.721 16.1043 14.2585 16.1043 13.6882V12.6555L16.1039 12.6554H16.1043C16.6655 12.6554 17.1204 12.193 17.1204 11.6226V7.49147C17.1204 6.64382 16.615 5.91556 15.895 5.59754L15.895 5.59755ZM5.17494 2.32754H12.8078L13.7224 5.4259H4.2604L5.17494 2.32754H5.17494ZM4.92687 10.0734C4.36565 10.0734 3.91074 9.611 3.91074 9.04065C3.91074 8.47023 4.36565 8.00786 4.92687 8.00786C5.48808 8.00786 5.94299 8.47023 5.94299 9.04065C5.94299 9.611 5.48808 10.0734 4.92687 10.0734ZM13.0559 10.0734C12.4947 10.0734 12.0398 9.611 12.0398 9.04065C12.0398 8.47023 12.4947 8.00786 13.0559 8.00786C13.6171 8.00786 14.072 8.47023 14.072 9.04065C14.072 9.611 13.6171 10.0734 13.0559 10.0734Z" fill="white"/>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="text">Автомобиль</span>
+                                                </a>
+                                                <div class="header__insure-menu__card-toggler">
+                                                    Виды страхования
+                                                </div>
+                                                <div class="header__insure-menu__card-list">
+                                                    <a href="/">КАСКО</a>
+                                                    <a href="/">ОСАГО</a>
+                                                    <a href="/">Зеленая карта</a>
+                                                    <a href="/">ДГО на транспорте</a>
+                                                    <a href="/">“Наша автогражданка”</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header__insure-menu__card">
+                                            <div class="header__insure-menu__card-image">
+                                                <img src="img/temp/card-2.jpg" alt="">
+                                            </div>
+                                            <div class="header__insure-menu__card-info">
+                                                <a href="/" class="header__insure-menu__card-link">
+                                                    <span class="icon">
+                                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_901:12277)">
+                                                            <path d="M0.446622 13.2368L6.80962 2.95149L5.69645 1.22964C5.54747 0.999168 5.61341 0.691873 5.84388 0.542891C6.07435 0.393909 6.38227 0.459536 6.53156 0.690629L7.41612 2.06008L8.30193 0.690318C8.45091 0.459847 8.75882 0.393909 8.98898 0.542891C9.21946 0.691873 9.28539 0.999479 9.13703 1.22995L8.02418 2.9518L14.3869 13.2372C14.5302 13.4658 14.538 13.7522 14.4071 13.9883C14.2764 14.2247 14.0276 14.3693 13.758 14.3693H10.9416C10.6875 14.3693 10.4505 14.2396 10.313 14.0259L7.92029 10.2914C7.81019 10.1197 7.62046 10.0162 7.41674 10.0162C7.21333 10.0162 7.02329 10.1197 6.91319 10.2917L4.5217 14.0259C4.38485 14.2402 4.14785 14.3699 3.89311 14.3699H1.07583C0.805859 14.3699 0.557037 14.2253 0.426405 13.9886C0.295774 13.7519 0.303239 13.4654 0.446622 13.2368Z" fill="white"/>
+                                                            </g>
+                                                            <defs>
+                                                            <clipPath id="clip0_901:12277">
+                                                            <rect width="14.1667" height="14.1664" fill="white" transform="translate(0.333252 0.333252)"/>
+                                                            </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="text">Путешествие</span>
+                                                </a>
+                                                <div class="header__insure-menu__card-toggler">
+                                                    Виды страхования
+                                                </div>
+                                                <div class="header__insure-menu__card-list">
+                                                    <a href="/">КАСКО</a>
+                                                    <a href="/">ОСАГО</a>
+                                                    <a href="/">Зеленая карта</a>
+                                                    <a href="/">ДГО на транспорте</a>
+                                                    <a href="/">“Наша автогражданка”</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header__insure-menu__card">
+                                            <div class="header__insure-menu__card-image">
+                                                <img src="img/temp/card-3.jpg" alt="">
+                                            </div>
+                                            <div class="header__insure-menu__card-info">
+                                                <a href="/" class="header__insure-menu__card-link">
+                                                    <span class="icon">
+                                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M14.1194 6.66244C14.119 6.66212 14.1187 6.6618 14.1184 6.66147L8.33893 0.882221C8.09259 0.635766 7.76506 0.5 7.41667 0.5C7.06829 0.5 6.74076 0.635658 6.49431 0.882113L0.717865 6.65845C0.71592 6.66039 0.713974 6.66244 0.712028 6.66439C0.206148 7.17319 0.207013 7.9987 0.714514 8.50621C0.946376 8.73818 1.25261 8.87254 1.58002 8.88659C1.59332 8.88789 1.60672 8.88853 1.62024 8.88853H1.85058V13.1417C1.85058 13.9833 2.53536 14.6681 3.3772 14.6681H5.63831C5.86747 14.6681 6.05339 14.4823 6.05339 14.253V10.9185C6.05339 10.5345 6.36578 10.2221 6.74984 10.2221H8.08351C8.46756 10.2221 8.77996 10.5345 8.77996 10.9185V14.253C8.77996 14.4823 8.96577 14.6681 9.19504 14.6681H11.4561C12.298 14.6681 12.9828 13.9833 12.9828 13.1417V8.88853H13.1964C13.5446 8.88853 13.8722 8.75288 14.1187 8.50642C14.6268 7.99806 14.627 7.17114 14.1194 6.66244V6.66244Z" fill="white"/>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="text">Недвижимость</span>
+                                                </a>
+                                                <div class="header__insure-menu__card-toggler">
+                                                    Виды страхования
+                                                </div>
+                                                <div class="header__insure-menu__card-list">
+                                                    <a href="/">КАСКО</a>
+                                                    <a href="/">ОСАГО</a>
+                                                    <a href="/">Зеленая карта</a>
+                                                    <a href="/">ДГО на транспорте</a>
+                                                    <a href="/">“Наша автогражданка”</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header__insure-menu__card">
+                                            <div class="header__insure-menu__card-image">
+                                                <img src="img/temp/card-4.jpg" alt="">
+                                            </div>
+                                            <div class="header__insure-menu__card-info">
+                                                <a href="/" class="header__insure-menu__card-link">
+                                                    <span class="icon">
+                                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_901:4927)">
+                                                            <path d="M7.41256 2.20088C4.32465 -0.499934 0.398432 1.87308 0.33405 5.09008C0.317644 5.90994 0.554309 6.70855 1.0254 7.4448H4.07886L4.62196 6.53959C4.77967 6.27678 5.16131 6.26831 5.32795 6.53032L6.47384 8.33098L8.14419 4.80477C8.28985 4.49709 8.72398 4.48732 8.88464 4.78568L10.3165 7.4448H13.7997C16.38 3.41204 11.2805 -1.18212 7.41256 2.20088V2.20088Z" fill="white"/>
+                                                            <path d="M9.7022 8.05636L8.54195 5.90161L6.90126 9.36526C6.76168 9.65995 6.35113 9.68554 6.17607 9.41042L4.98722 7.54225L4.66868 8.07312C4.59368 8.19812 4.45861 8.2746 4.31283 8.2746H1.68091C1.76341 8.36095 1.3237 7.92212 7.11883 13.6872C7.28069 13.8483 7.54233 13.8483 7.70422 13.6872C13.4102 8.01082 13.0598 8.36078 13.1421 8.2746H10.0676C9.9149 8.27462 9.77458 8.19079 9.7022 8.05636V8.05636Z" fill="white"/>
+                                                            </g>
+                                                            <defs>
+                                                            <clipPath id="clip0_901:4927">
+                                                            <rect width="14.1667" height="14.1667" fill="white" transform="translate(0.333252 0.333374)"/>
+                                                            </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="text">Себя и близких</span>
+                                                </a>
+                                                <div class="header__insure-menu__card-toggler">
+                                                    Виды страхования
+                                                </div>
+                                                <div class="header__insure-menu__card-list">
+                                                    <a href="/">КАСКО</a>
+                                                    <a href="/">ОСАГО</a>
+                                                    <a href="/">Зеленая карта</a>
+                                                    <a href="/">ДГО на транспорте</a>
+                                                    <a href="/">“Наша автогражданка”</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header__insure-menu__footer">
+                                        <div class="header__dropdown-menu__button header__dropdown-menu__offer">
+                                            <a href="/">
+                                                <span>Предложения для бизнеса</span>
+                                            </a>
+                                        </div>
+                                        <div class="header__dropdown-menu__button header__dropdown-menu__products">
+                                            <a href="/">
+                                                <span>Все страховые продукты</span>
+                                            </a>
+                                        </div>
+                                        <div class="header__dropdown-menu__chats">
+                                            <a href="/" class="header__dropdown-menu__chat telegram" rel="noindex nofollow noreferrer">
+                                                Telegram-бот
+                                            </a>
+                                            <a href="/" class="header__dropdown-menu__chat viber" rel="noindex nofollow noreferrer">
+                                                Viber-бот
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="content">
+                <section class="cabinet">
+                    <div class="container">
+                        <div class="cabinet__head">
+                            <h1 class="page-title cabinet__title">
+                                Личный кабинет
+                            </h1>
+                            <a href="/" class="btn red cabinet__issue-request">Заявить о страховом случае</a>
+                        </div>
+                        <div class="cabinet__controls">
+                            <ul class="nav nav-pills cabinet__pills">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Общая информация</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Мои данные</a>
+                                </li>
+                            </ul>
+                            <div class="cabinet__control-links">
+                                <button class="cabinet__control-link cabinet__change-login-info">
+                                    Изменить данные для входа
+                                </button>
+                                <a href="/" class="cabinet__control-link cabinet__logout">
+                                    Выйти из аккаунта
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="cabinet__group cabinet__personal">
+                            <div class="cabinet__group-title">
+                                Мои данные
+                            </div>
+                            <div class="cabinet__group-content cabinet__personal-list">
+                                <div class="cabinet__personal-item cabinet__personal-item--person">
+                                    <div class="cabinet__personal-item__head">
+                                        <div class="cabinet__personal-item__title">Личная информация</div>
+                                        <!-- поправил кнопку -->
+                                        <button type="button" class="cabinet__personal-item__edit">
+                                            <span>
+                                                Изменить
+                                            </span>
+                                        </button>
+                                        <button type="submit" class="cabinet__personal-item__submit">
+                                            <span>
+                                                Сохранить изменения
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="cabinet__personal-item__body">
+                                        <div class="cabinet__personal-item__content">
+                                            <div class="cabinet__personal-item__param-groups">
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">ФИО (на украинском)</div>
+                                                    <div class="cabinet__personal-item__param-value">Яблочкова Валентина Инокентиевна</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="Яблочкова" placeholder="Введите вашу фамилию" required>
+                                                        </div>
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="Валентина" placeholder="Введите ваше имя" required>
+                                                        </div>
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="Інокентіївна" placeholder="Введите ваше отчество" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Телефон</div>
+                                                    <div class="cabinet__personal-item__param-value">+380 (68) 660 22 22</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="phone" value="+380 (68) 660 22 22" placeholder="Введите ваш телефон" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Дата рождения</div>
+                                                    <div class="cabinet__personal-item__param-value">21.04.1984</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="21.04.1984" placeholder="Введите дату рождения" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">Емейл</div>
+                                                    <div class="cabinet__personal-item__param-value">valentina@gmail.com</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="email" value="valentina@mail.com" placeholder="Введите вашу почту" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- добавленные группы -->
+                                            <div class="cabinet__personal-item__param-groups hidden">
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">Адрес прописки</div>
+                                                    <div class="cabinet__personal-item__param-value">г. Одесса, ул.Крымская, дом 84, квартира 32</div>
+                                                    <div class="cabinet__personal-item__param-inputs address-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="г. Одесса" placeholder="Введите ваш город" required>
+                                                        </div>
+                                                        <div class="input-wrapper select-wrapper street-type-wrapper">
+                                                            <select>
+                                                                <option value="Улица" selected>Улица</option>
+                                                                <option value="Проспект">Проспект</option>
+                                                                <option value="Бульвар">Бульвар</option>
+                                                                <option value="Переулок">Переулок</option>
+                                                                <option value="Тупик">Тупик</option>
+                                                                <option value="Набережная">Набережная</option>
+                                                                <option value="Взвоз">Взвоз</option>
+                                                                <option value="Аллея">Аллея</option>
+                                                                <option value="Тракт">Тракт</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="input-wrapper street-name-wrapper">
+                                                            <input type="text" value="Крымская" placeholder="Введите вашу улицу" required>
+                                                        </div>
+                                                        <div class="input-wrapper building-number-wrapper">
+                                                            <input type="text" value="Дом 84" placeholder="Введите номер дома" required>
+                                                        </div>
+                                                        <div class="input-wrapper apartment-number-wrapper">
+                                                            <input type="text" value="Квартира 32" placeholder="Введите номер квартиры" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">Номер паспорта</div>
+                                                    <div class="cabinet__personal-item__param-value">2359834659611</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="2359834659611" placeholder="Введите номер паспорта" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">ИНН</div>
+                                                    <div class="cabinet__personal-item__param-value">9834659611</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="9834659611" placeholder="Введите ваш ИНН" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cabinet__personal-item__param-groups hidden">
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">Имя и фамилия в загранпаспорте (на латинице)</div>
+                                                    <div class="cabinet__personal-item__param-value">Yablochkova Valentina</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="Yablochkova" placeholder="Введите фамилию в загранпаспорте">
+                                                        </div>
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="Valentina" placeholder="Введите имя в загранпаспорте">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group wide international-passport-group">
+                                                    <div class="cabinet__personal-item__param-label">Номер загранпаспорта</div>
+                                                    <div class="cabinet__personal-item__param-value">2359834659611</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="2359834659611" placeholder="Введите номер загранпаспорта">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">Серия загранпаспорта </div>
+                                                    <div class="cabinet__personal-item__param-value">9834659611</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="2359834659611" placeholder="Введите серию загранпаспорта">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- конец добавленные группы -->
+                                        </div>
+
+                                        <!-- поправил кнопку -->
+                                        <button class="cabinet__personal-item__toggler">
+                                            <span>
+                                                Показать всю информацию
+                                            </span>
+                                            <span>
+                                                Скрыть дополнительную информацию
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="cabinet__personal-item">
+                                    <div class="cabinet__personal-item__head">
+                                        <div class="cabinet__personal-item__title">Подключенные сервисы</div>
+
+                                        <div class="popover-trigger" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover focus" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?"></div>
+                                    </div>
+                                    <div class="cabinet__personal-item__body">
+                                        <div class="cabinet__personal-item__content">
+                                            <div class="cabinet__personal-item__content-descr">
+                                                Вы можете подключить сервисы, чтобы авторизироваться с их помощью при повторном входе в личный кабинет
+                                            </div>
+                                            <div class="cabinet__personal-item__services">
+                                                <button class="cabinet__personal-item__service diya active">ДІЯ</button>
+                                                <button class="cabinet__personal-item__service bankid">BankID</button>
+                                                <button class="cabinet__personal-item__service telegram">Telegram</button>
+                                                <button class="cabinet__personal-item__service appleid">Apple ID</button>
+                                                <button class="cabinet__personal-item__service facebook">Facebook</button>
+                                                <button class="cabinet__personal-item__service googleplus">Google +</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cabinet__personal-item">
+                                    <div class="cabinet__personal-item__head">
+                                        <div class="cabinet__personal-item__title">Ваш автомобиль</div>
+                                        <button type="button" class="cabinet__personal-item__edit">
+                                            <span>
+                                                Изменить
+                                            </span>
+                                        </button>
+                                        <button type="submit" class="cabinet__personal-item__submit">
+                                            <span>
+                                                Сохранить изменения
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="cabinet__personal-item__body">
+                                        <div class="cabinet__personal-item__content">
+                                            <div class="cabinet__personal-item__content-title">Volkswagen</div>
+                                            <div class="cabinet__personal-item__param-groups">
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Гос. номер</div>
+                                                    <div class="cabinet__personal-item__param-value">ВН 1015 МХ</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="ВН 1015 МХ" placeholder="Введите гос.номер">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Объём двигателя</div>
+                                                    <div class="cabinet__personal-item__param-value">1984 см3</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="1984" placeholder="Введите объём двигателя, куб.см">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Примерная стоимость</div>
+                                                    <div class="cabinet__personal-item__param-value">850 000 грн</div>
+
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="850 000" placeholder="Введите ориентировочную стоимость авто">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Год выпуска</div>
+                                                    <div class="cabinet__personal-item__param-value">2016</div>
+
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="2016" placeholder="Введите год выпуска">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- пока нет обновлений по этим блокам структуру сделал наскидку -->
+                                            <div class="cabinet__personal-item__param-groups hidden">
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Гос. номер</div>
+                                                    <div class="cabinet__personal-item__param-value">ВН 1015 МХ</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="ВН 1015 МХ" placeholder="Введите гос.номер">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Объём двигателя</div>
+                                                    <div class="cabinet__personal-item__param-value">1984 см3</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="1984" placeholder="Введите объём двигателя, куб.см">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">Примерная стоимость</div>
+                                                    <div class="cabinet__personal-item__param-value">850 000 грн</div>
+
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="850 000" placeholder="Введите ориентировочную стоимость авто">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">Год выпуска</div>
+                                                    <div class="cabinet__personal-item__param-value">2016</div>
+
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="2016" placeholder="Введите год выпуска">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cabinet__personal-item__param-groups hidden">
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">Гос. номер</div>
+                                                    <div class="cabinet__personal-item__param-value">ВН 1015 МХ</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="ВН 1015 МХ" placeholder="Введите гос.номер">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Объём двигателя</div>
+                                                    <div class="cabinet__personal-item__param-value">1984 см3</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="1984" placeholder="Введите объём двигателя, куб.см">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Примерная стоимость</div>
+                                                    <div class="cabinet__personal-item__param-value">850 000 грн</div>
+
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="850 000" placeholder="Введите ориентировочную стоимость авто">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">Год выпуска</div>
+                                                    <div class="cabinet__personal-item__param-value">2016</div>
+
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="2016" placeholder="Введите год выпуска">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cabinet__personal-item__toggler">
+                                            <span>
+                                                Показать всю информацию
+                                            </span>
+                                            <span>
+                                                Скрыть дополнительную информацию
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- карточка другого человека скорее всего идентична моей информации -->
+                                <div class="cabinet__personal-item">
+                                    <div class="cabinet__personal-item__head">
+                                        <div class="cabinet__personal-item__title">Григоренко Григорий</div>
+                                        <button type="button" class="cabinet__personal-item__edit">
+                                            <span>
+                                                Изменить
+                                            </span>
+                                        </button>
+                                        <button type="submit" class="cabinet__personal-item__submit">
+                                            <span>
+                                                Сохранить изменения
+                                            </span>
+                                        </button>
+                                    </div>
+
+                                    <!-- Сделал дубль структуры боди ниже с моей информации -->
+                                    <div class="cabinet__personal-item__body">
+                                        <div class="cabinet__personal-item__content">
+                                            <div class="cabinet__personal-item__param-groups">
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">ФИО (на украинском)</div>
+                                                    <div class="cabinet__personal-item__param-value">Григоренко Григорий Инокентиевна</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="Яблочкова" placeholder="Введите вашу фамилию" required>
+                                                        </div>
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="Валентина" placeholder="Введите ваше имя" required>
+                                                        </div>
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="Інокентіївна" placeholder="Введите ваше отчество" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Телефон</div>
+                                                    <div class="cabinet__personal-item__param-value">+380 (68) 660 22 22</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="phone" value="+380 (68) 660 22 22" placeholder="Введите ваш телефон" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Дата рождения</div>
+                                                    <div class="cabinet__personal-item__param-value">21.04.1984</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="21.04.1984" placeholder="Введите дату рождения" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">Емейл</div>
+                                                    <div class="cabinet__personal-item__param-value">gregory@gmail.com</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="email" value="valentina@mail.com" placeholder="Введите вашу почту" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- добавленные группы -->
+                                            <div class="cabinet__personal-item__param-groups hidden">
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">Адрес прописки</div>
+                                                    <div class="cabinet__personal-item__param-value">г. Одесса, ул.Крымская, дом 84, квартира 32</div>
+                                                    <div class="cabinet__personal-item__param-inputs address-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="г. Одесса" placeholder="Введите ваш город" required>
+                                                        </div>
+                                                        <div class="input-wrapper select-wrapper street-type-wrapper">
+                                                            <select>
+                                                                <option value="Улица" selected>Улица</option>
+                                                                <option value="Проспект">Проспект</option>
+                                                                <option value="Бульвар">Бульвар</option>
+                                                                <option value="Переулок">Переулок</option>
+                                                                <option value="Тупик">Тупик</option>
+                                                                <option value="Набережная">Набережная</option>
+                                                                <option value="Взвоз">Взвоз</option>
+                                                                <option value="Аллея">Аллея</option>
+                                                                <option value="Тракт">Тракт</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="input-wrapper street-name-wrapper">
+                                                            <input type="text" value="Крымская" placeholder="Введите вашу улицу" required>
+                                                        </div>
+                                                        <div class="input-wrapper building-number-wrapper">
+                                                            <input type="text" value="Дом 84" placeholder="Введите номер дома" required>
+                                                        </div>
+                                                        <div class="input-wrapper apartment-number-wrapper">
+                                                            <input type="text" value="Квартира 32" placeholder="Введите номер квартиры" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">Номер паспорта</div>
+                                                    <div class="cabinet__personal-item__param-value">2359834659611</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="2359834659611" placeholder="Введите номер паспорта" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">ИНН</div>
+                                                    <div class="cabinet__personal-item__param-value">9834659611</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="9834659611" placeholder="Введите ваш ИНН" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cabinet__personal-item__param-groups hidden">
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">Имя и фамилия в загранпаспорте (на латинице)</div>
+                                                    <div class="cabinet__personal-item__param-value">Gregory Gregory</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="Yablochkova" placeholder="Введите фамилию в загранпаспорте">
+                                                        </div>
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="Valentina" placeholder="Введите имя в загранпаспорте">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group wide international-passport-group">
+                                                    <div class="cabinet__personal-item__param-label">Номер загранпаспорта</div>
+                                                    <div class="cabinet__personal-item__param-value">2359834659611</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="2359834659611" placeholder="Введите номер загранпаспорта">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">Серия загранпаспорта </div>
+                                                    <div class="cabinet__personal-item__param-value">9834659611</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="2359834659611" placeholder="Введите серию загранпаспорта">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- конец добавленные группы -->
+                                        </div>
+
+                                        <!-- поправил кнопку -->
+                                        <button class="cabinet__personal-item__toggler">
+                                            <span>
+                                                Показать всю информацию
+                                            </span>
+                                            <span>
+                                                Скрыть дополнительную информацию
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="cabinet__personal-item">
+                                    <div class="cabinet__personal-item__head">
+                                        <div class="cabinet__personal-item__title">Ваш автомобиль</div>
+                                        <button type="button" class="cabinet__personal-item__edit">
+                                            <span>
+                                                Изменить
+                                            </span>
+                                        </button>
+                                        <button type="submit" class="cabinet__personal-item__submit">
+                                            <span>
+                                                Сохранить изменения
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="cabinet__personal-item__body">
+                                        <div class="cabinet__personal-item__content">
+                                            <div class="cabinet__personal-item__content-title">Volkswagen</div>
+                                            <div class="cabinet__personal-item__param-groups">
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Гос. номер</div>
+                                                    <div class="cabinet__personal-item__param-value">ВН 1015 МХ</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="ВН 1015 МХ" placeholder="Введите гос.номер">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Объём двигателя</div>
+                                                    <div class="cabinet__personal-item__param-value">1984 см3</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="1984" placeholder="Введите объём двигателя, куб.см">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Примерная стоимость</div>
+                                                    <div class="cabinet__personal-item__param-value">850 000 грн</div>
+
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="850 000" placeholder="Введите ориентировочную стоимость авто">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Год выпуска</div>
+                                                    <div class="cabinet__personal-item__param-value">2016</div>
+
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="2016" placeholder="Введите год выпуска">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- пока нет обновлений по этим блокам структуру сделал наскидку -->
+                                            <div class="cabinet__personal-item__param-groups hidden">
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Гос. номер</div>
+                                                    <div class="cabinet__personal-item__param-value">ВН 1015 МХ</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="ВН 1015 МХ" placeholder="Введите гос.номер">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Объём двигателя</div>
+                                                    <div class="cabinet__personal-item__param-value">1984 см3</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="1984" placeholder="Введите объём двигателя, куб.см">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">Примерная стоимость</div>
+                                                    <div class="cabinet__personal-item__param-value">850 000 грн</div>
+
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="850 000" placeholder="Введите ориентировочную стоимость авто">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">Год выпуска</div>
+                                                    <div class="cabinet__personal-item__param-value">2016</div>
+
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="2016" placeholder="Введите год выпуска">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cabinet__personal-item__param-groups hidden">
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">Гос. номер</div>
+                                                    <div class="cabinet__personal-item__param-value">ВН 1015 МХ</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="ВН 1015 МХ" placeholder="Введите гос.номер">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Объём двигателя</div>
+                                                    <div class="cabinet__personal-item__param-value">1984 см3</div>
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="1984" placeholder="Введите объём двигателя, куб.см">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group">
+                                                    <div class="cabinet__personal-item__param-label">Примерная стоимость</div>
+                                                    <div class="cabinet__personal-item__param-value">850 000 грн</div>
+
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="850 000" placeholder="Введите ориентировочную стоимость авто">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__personal-item__param-group wide">
+                                                    <div class="cabinet__personal-item__param-label">Год выпуска</div>
+                                                    <div class="cabinet__personal-item__param-value">2016</div>
+
+                                                    <div class="cabinet__personal-item__param-inputs">
+                                                        <div class="input-wrapper">
+                                                            <input type="text" value="2016" placeholder="Введите год выпуска">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cabinet__personal-item__toggler">
+                                            <span>
+                                                Показать всю информацию
+                                            </span>
+                                            <span>
+                                                Скрыть дополнительную информацию
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cabinet__personal-create">
+                                    <button class="cabinet__personal-create__btn cabinet__personal-create__btn--car">
+                                        Добавить еще один автомобиль
+                                    </button>
+                                    <button class="cabinet__personal-create__btn cabinet__personal-create__btn--person">
+                                        Добавить еще информацию <br>
+                                        о близком человеке
+                                    </button>
+                                    <button class="cabinet__personal-create__btn cabinet__personal-create__btn--estate">
+                                        Добавить информацию <br>
+                                        о недвижимости
+                                    </button>
+                                </div>
+
+                                <!-- подложка под активную группу -->
+                                <div class="cabinet__personal-overlay"></div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="cabinet__group cabinet__offer">
+                            <div class="cabinet__group-title">Предлагаем Вам</div>
+                            <div class="cabinet__group-content">
+                                <div class="row cabinet__offer-banner">
+                                    <div class="col col-8 cabinet__offer-image">
+                                        <img src="img/temp/cabinet-offer-banner.jpg" alt="">
+                                    </div>
+                                    <div class="col col-4 cabinet__offer-info">
+                                        <div class="cabinet__offer-title">
+                                            <span>
+                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_1308:38888)">
+                                                    <path d="M7.41329 1.92317C4.32538 -0.777643 0.399164 1.59537 0.334783 4.81237C0.318376 5.63223 0.555041 6.43084 1.02613 7.16709H4.07959L4.6227 6.26188C4.7804 5.99907 5.16204 5.9906 5.32868 6.25261L6.47457 8.05327L8.14492 4.52706C8.29059 4.21938 8.72471 4.20961 8.88538 4.50797L10.3172 7.16709H13.8004C16.3807 3.13433 11.2812 -1.45983 7.41329 1.92317Z" fill="white"/>
+                                                    <path d="M9.70293 7.77865L8.54268 5.6239L6.90199 9.08755C6.76241 9.38224 6.35186 9.40783 6.17681 9.13271L4.98795 7.26454L4.66942 7.79541C4.59441 7.92041 4.45934 7.99689 4.31356 7.99689H1.68164C1.76414 8.08324 1.32443 7.64441 7.11957 13.4095C7.28142 13.5706 7.54307 13.5706 7.70495 13.4095C13.4109 7.73311 13.0605 8.08307 13.1429 7.99689H10.0683C9.91564 7.99691 9.77531 7.91308 9.70293 7.77865Z" fill="white"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_1308:38888">
+                                                    <rect width="14.1667" height="14.1667" fill="white" transform="translate(0.333984 0.0556641)"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+                                            ДГО на транспорте
+                                        </div>
+                                        <div class="cabinet__offer-descr">
+                                            Дополнительное покрытие к вашему ОСАГО - <br>
+                                            это увеличенное покрытие последствий дорожных происшествий
+                                        </div>
+                                        <div class="cabinet__offer-annotation">
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.6213 3.53479C9.88569 3.53479 10.1 3.74912 10.1 4.01351V18.0561C10.1 18.3205 9.88569 18.5348 9.6213 18.5348C9.35691 18.5348 9.14258 18.3205 9.14258 18.0561V4.01351C9.14258 3.74912 9.35691 3.53479 9.6213 3.53479Z" fill="#BFC9E9"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.83008 4.01351C8.83008 3.57653 9.18432 3.22229 9.6213 3.22229C10.0583 3.22229 10.4125 3.57653 10.4125 4.01351V18.0561C10.4125 18.493 10.0583 18.8473 9.6213 18.8473C9.18432 18.8473 8.83008 18.493 8.83008 18.0561V4.01351ZM9.6213 3.84729C9.5295 3.84729 9.45508 3.92171 9.45508 4.01351V18.0561C9.45508 18.1479 9.5295 18.2223 9.6213 18.2223C9.7131 18.2223 9.78752 18.1479 9.78752 18.0561V4.01351C9.78752 3.92171 9.7131 3.84729 9.6213 3.84729Z" fill="#BFC9E9"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.10705 6.88232C6.61579 6.37358 7.3058 6.08777 8.02527 6.08777H12.8125C13.0769 6.08777 13.2912 6.3021 13.2912 6.56649C13.2912 6.83088 13.0769 7.04522 12.8125 7.04522H8.02527C7.55973 7.04522 7.11325 7.23015 6.78407 7.55934C6.45488 7.88852 6.26995 8.335 6.26995 8.80054C6.26995 9.26607 6.45488 9.71255 6.78407 10.0417C7.11325 10.3709 7.55973 10.5559 8.02527 10.5559H11.2168C11.9362 10.5559 12.6262 10.8417 13.135 11.3504C13.6437 11.8591 13.9295 12.5492 13.9295 13.2686C13.9295 13.9881 13.6437 14.6781 13.135 15.1868C12.6262 15.6956 11.9362 15.9814 11.2168 15.9814H5.79122C5.52683 15.9814 5.3125 15.7671 5.3125 15.5027C5.3125 15.2383 5.52683 15.0239 5.79122 15.0239H11.2168C11.6823 15.0239 12.1288 14.839 12.458 14.5098C12.7871 14.1806 12.9721 13.7342 12.9721 13.2686C12.9721 12.8031 12.7871 12.3566 12.458 12.0274C12.1288 11.6982 11.6823 11.5133 11.2168 11.5133H8.02527C7.3058 11.5133 6.61579 11.2275 6.10705 10.7188C5.59831 10.21 5.3125 9.52001 5.3125 8.80054C5.3125 8.08106 5.59831 7.39106 6.10705 6.88232Z" fill="#BFC9E9"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.88608 6.66135C6.45343 6.094 7.22292 5.77527 8.02527 5.77527H12.8125C13.2495 5.77527 13.6037 6.12951 13.6037 6.56649C13.6037 7.00347 13.2495 7.35772 12.8125 7.35772H8.02527C7.64261 7.35772 7.27562 7.50973 7.00504 7.78031C6.73446 8.05089 6.58245 8.41788 6.58245 8.80054C6.58245 9.18319 6.73446 9.55018 7.00504 9.82076C7.27562 10.0913 7.64261 10.2434 8.02527 10.2434H11.2168C12.0191 10.2434 12.7886 10.5621 13.3559 11.1294C13.9233 11.6968 14.242 12.4663 14.242 13.2686C14.242 14.071 13.9233 14.8405 13.3559 15.4078C12.7886 15.9752 12.0191 16.2939 11.2168 16.2939H5.79122C5.35424 16.2939 5 15.9396 5 15.5027C5 15.0657 5.35424 14.7114 5.79122 14.7114H11.2168C11.5994 14.7114 11.9664 14.5594 12.237 14.2888C12.5076 14.0183 12.6596 13.6513 12.6596 13.2686C12.6596 12.886 12.5076 12.519 12.237 12.2484C11.9664 11.9778 11.5994 11.8258 11.2168 11.8258H8.02527C7.22292 11.8258 6.45343 11.5071 5.88608 10.9397C5.31873 10.3724 5 9.60289 5 8.80054C5 7.99818 5.31873 7.2287 5.88608 6.66135ZM8.02527 6.40027C7.38868 6.40027 6.77816 6.65315 6.32802 7.10329C5.87788 7.55343 5.625 8.16394 5.625 8.80054C5.625 9.43713 5.87788 10.0476 6.32802 10.4978C6.77816 10.9479 7.38868 11.2008 8.02527 11.2008H11.2168C11.7652 11.2008 12.2911 11.4187 12.6789 11.8065C13.0667 12.1942 13.2846 12.7202 13.2846 13.2686C13.2846 13.817 13.0667 14.343 12.6789 14.7308C12.2911 15.1186 11.7652 15.3364 11.2168 15.3364H5.79122C5.69942 15.3364 5.625 15.4109 5.625 15.5027C5.625 15.5945 5.69942 15.6689 5.79122 15.6689H11.2168C11.8533 15.6689 12.4639 15.416 12.914 14.9659C13.3641 14.5157 13.617 13.9052 13.617 13.2686C13.617 12.632 13.3641 12.0215 12.914 11.5714C12.4639 11.1212 11.8533 10.8684 11.2168 10.8684H8.02527C7.47685 10.8684 6.95089 10.6505 6.5631 10.2627C6.17531 9.87491 5.95745 9.34895 5.95745 8.80054C5.95745 8.25212 6.17531 7.72616 6.5631 7.33837C6.95089 6.95057 7.47685 6.73272 8.02527 6.73272H12.8125C12.9043 6.73272 12.9787 6.65829 12.9787 6.56649C12.9787 6.47469 12.9043 6.40027 12.8125 6.40027H8.02527Z" fill="#BFC9E9"/>
+                                            </svg>
+
+                                            Возместим Вам до 500 000 грн
+                                        </div>
+                                        <div class="cabinet__offer-controls">
+                                            <a href="/" class="btn yellow cabinet__offer-order">Заказать</a>
+                                            <a href="/" class="cabinet__offer-details">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="cabinet__group cabinet__bottom">
+                            <div class="row">
+                                <div class="col col-8">
+                                    <div class="accordion" id="faq__accordion">
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="faq-elem-header-1">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-elem-body-1" aria-expanded="true" aria-controls="faq-elem-body-1">
+                                                    Что такое электронный полис?
+                                                </button>
+                                            </h3>
+                                            <div id="faq-elem-body-1" class="accordion-collapse collapse" aria-labelledby="faq-elem-header-1" data-bs-parent="#faq__accordion">
+                                                <div class="accordion-body">
+                                                    Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="faq-elem-header-2">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-elem-body-2" aria-expanded="true" aria-controls="faq-elem-body-2">
+                                                    Что такое "франшиза"?
+                                                </button>
+                                            </h3>
+                                            <div id="faq-elem-body-2" class="accordion-collapse collapse" aria-labelledby="faq-elem-header-2" data-bs-parent="#faq__accordion">
+                                                <div class="accordion-body">
+                                                    Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="faq-elem-header-3">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-elem-body-3" aria-expanded="true" aria-controls="faq-elem-body-3">
+                                                    Можно ли приехать в офис?
+                                                </button>
+                                            </h3>
+                                            <div id="faq-elem-body-3" class="accordion-collapse collapse" aria-labelledby="faq-elem-header-3" data-bs-parent="#faq__accordion">
+                                                <div class="accordion-body">
+                                                    Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="faq-elem-header-4">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-elem-body-4" aria-expanded="true" aria-controls="faq-elem-body-4">
+                                                    Есть ли у вас скидка для пенсионеров и льготников?
+                                                </button>
+                                            </h3>
+                                            <div id="faq-elem-body-4" class="accordion-collapse collapse" aria-labelledby="faq-elem-header-4" data-bs-parent="#faq__accordion">
+                                                <div class="accordion-body">
+                                                    Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="faq-elem-header-5">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-elem-body-5" aria-expanded="true" aria-controls="faq-elem-body-5">
+                                                    Где я могу почитать ваши правила страхования и оферты?
+                                                </button>
+                                            </h3>
+                                            <div id="faq-elem-body-5" class="accordion-collapse collapse" aria-labelledby="faq-elem-header-5" data-bs-parent="#faq__accordion">
+                                                <div class="accordion-body">
+                                                    Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="faq-elem-header-6">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-elem-body-6" aria-expanded="true" aria-controls="faq-elem-body-6">
+                                                    Где я могу почитать ваши правила страхования и оферты?
+                                                </button>
+                                            </h3>
+                                            <div id="faq-elem-body-6" class="accordion-collapse collapse" aria-labelledby="faq-elem-header-5" data-bs-parent="#faq__accordion">
+                                                <div class="accordion-body">
+                                                    Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-4">
+                                    <div class="card">
+                                        <img src="img/temp/news-card-1.jpg" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Розыгрыш от VUSO: дарим полный Check-up!</h5>
+                                            <div class="card-footer">
+                                                <a href="#" class="card-link">Читать полностью</a>
+                                                <div class="card-date">12 мая 2021</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
+
+                <section class="product-suggestion">
+                    <div class="container">
+                        <div class="product-suggestion__title">Предлагаем Вам</div>
+                        <div class="product-suggestion__content">
+                            <div class="row product-suggestion__banner">
+                                <div class="col col-8 product-suggestion__image">
+                                    <img src="img/temp/cabinet-offer-banner.jpg" alt="">
+                                </div>
+                                <div class="col col-4 product-suggestion__info">
+                                    <div class="product-suggestion__info-title">
+                                        <span><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1308:38888)"><path d="M7.41329 1.92317C4.32538 -0.777643 0.399164 1.59537 0.334783 4.81237C0.318376 5.63223 0.555041 6.43084 1.02613 7.16709H4.07959L4.6227 6.26188C4.7804 5.99907 5.16204 5.9906 5.32868 6.25261L6.47457 8.05327L8.14492 4.52706C8.29059 4.21938 8.72471 4.20961 8.88538 4.50797L10.3172 7.16709H13.8004C16.3807 3.13433 11.2812 -1.45983 7.41329 1.92317Z" fill="white"/><path d="M9.70293 7.77865L8.54268 5.6239L6.90199 9.08755C6.76241 9.38224 6.35186 9.40783 6.17681 9.13271L4.98795 7.26454L4.66942 7.79541C4.59441 7.92041 4.45934 7.99689 4.31356 7.99689H1.68164C1.76414 8.08324 1.32443 7.64441 7.11957 13.4095C7.28142 13.5706 7.54307 13.5706 7.70495 13.4095C13.4109 7.73311 13.0605 8.08307 13.1429 7.99689H10.0683C9.91564 7.99691 9.77531 7.91308 9.70293 7.77865Z" fill="white"/></g><defs><clipPath id="clip0_1308:38888"><rect width="14.1667" height="14.1667" fill="white" transform="translate(0.333984 0.0556641)"/></clipPath></defs></svg></span>
+                                        ДГО на транспорте
+                                    </div>
+                                    <div class="product-suggestion__info-descr">
+                                        Дополнительное покрытие к вашему ОСАГО - <br>
+                                        это увеличенное покрытие последствий дорожных происшествий
+                                    </div>
+                                    <div class="product-suggestion__info-annotation">
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.6213 3.53479C9.88569 3.53479 10.1 3.74912 10.1 4.01351V18.0561C10.1 18.3205 9.88569 18.5348 9.6213 18.5348C9.35691 18.5348 9.14258 18.3205 9.14258 18.0561V4.01351C9.14258 3.74912 9.35691 3.53479 9.6213 3.53479Z" fill="#BFC9E9"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.83008 4.01351C8.83008 3.57653 9.18432 3.22229 9.6213 3.22229C10.0583 3.22229 10.4125 3.57653 10.4125 4.01351V18.0561C10.4125 18.493 10.0583 18.8473 9.6213 18.8473C9.18432 18.8473 8.83008 18.493 8.83008 18.0561V4.01351ZM9.6213 3.84729C9.5295 3.84729 9.45508 3.92171 9.45508 4.01351V18.0561C9.45508 18.1479 9.5295 18.2223 9.6213 18.2223C9.7131 18.2223 9.78752 18.1479 9.78752 18.0561V4.01351C9.78752 3.92171 9.7131 3.84729 9.6213 3.84729Z" fill="#BFC9E9"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.10705 6.88232C6.61579 6.37358 7.3058 6.08777 8.02527 6.08777H12.8125C13.0769 6.08777 13.2912 6.3021 13.2912 6.56649C13.2912 6.83088 13.0769 7.04522 12.8125 7.04522H8.02527C7.55973 7.04522 7.11325 7.23015 6.78407 7.55934C6.45488 7.88852 6.26995 8.335 6.26995 8.80054C6.26995 9.26607 6.45488 9.71255 6.78407 10.0417C7.11325 10.3709 7.55973 10.5559 8.02527 10.5559H11.2168C11.9362 10.5559 12.6262 10.8417 13.135 11.3504C13.6437 11.8591 13.9295 12.5492 13.9295 13.2686C13.9295 13.9881 13.6437 14.6781 13.135 15.1868C12.6262 15.6956 11.9362 15.9814 11.2168 15.9814H5.79122C5.52683 15.9814 5.3125 15.7671 5.3125 15.5027C5.3125 15.2383 5.52683 15.0239 5.79122 15.0239H11.2168C11.6823 15.0239 12.1288 14.839 12.458 14.5098C12.7871 14.1806 12.9721 13.7342 12.9721 13.2686C12.9721 12.8031 12.7871 12.3566 12.458 12.0274C12.1288 11.6982 11.6823 11.5133 11.2168 11.5133H8.02527C7.3058 11.5133 6.61579 11.2275 6.10705 10.7188C5.59831 10.21 5.3125 9.52001 5.3125 8.80054C5.3125 8.08106 5.59831 7.39106 6.10705 6.88232Z" fill="#BFC9E9"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.88608 6.66135C6.45343 6.094 7.22292 5.77527 8.02527 5.77527H12.8125C13.2495 5.77527 13.6037 6.12951 13.6037 6.56649C13.6037 7.00347 13.2495 7.35772 12.8125 7.35772H8.02527C7.64261 7.35772 7.27562 7.50973 7.00504 7.78031C6.73446 8.05089 6.58245 8.41788 6.58245 8.80054C6.58245 9.18319 6.73446 9.55018 7.00504 9.82076C7.27562 10.0913 7.64261 10.2434 8.02527 10.2434H11.2168C12.0191 10.2434 12.7886 10.5621 13.3559 11.1294C13.9233 11.6968 14.242 12.4663 14.242 13.2686C14.242 14.071 13.9233 14.8405 13.3559 15.4078C12.7886 15.9752 12.0191 16.2939 11.2168 16.2939H5.79122C5.35424 16.2939 5 15.9396 5 15.5027C5 15.0657 5.35424 14.7114 5.79122 14.7114H11.2168C11.5994 14.7114 11.9664 14.5594 12.237 14.2888C12.5076 14.0183 12.6596 13.6513 12.6596 13.2686C12.6596 12.886 12.5076 12.519 12.237 12.2484C11.9664 11.9778 11.5994 11.8258 11.2168 11.8258H8.02527C7.22292 11.8258 6.45343 11.5071 5.88608 10.9397C5.31873 10.3724 5 9.60289 5 8.80054C5 7.99818 5.31873 7.2287 5.88608 6.66135ZM8.02527 6.40027C7.38868 6.40027 6.77816 6.65315 6.32802 7.10329C5.87788 7.55343 5.625 8.16394 5.625 8.80054C5.625 9.43713 5.87788 10.0476 6.32802 10.4978C6.77816 10.9479 7.38868 11.2008 8.02527 11.2008H11.2168C11.7652 11.2008 12.2911 11.4187 12.6789 11.8065C13.0667 12.1942 13.2846 12.7202 13.2846 13.2686C13.2846 13.817 13.0667 14.343 12.6789 14.7308C12.2911 15.1186 11.7652 15.3364 11.2168 15.3364H5.79122C5.69942 15.3364 5.625 15.4109 5.625 15.5027C5.625 15.5945 5.69942 15.6689 5.79122 15.6689H11.2168C11.8533 15.6689 12.4639 15.416 12.914 14.9659C13.3641 14.5157 13.617 13.9052 13.617 13.2686C13.617 12.632 13.3641 12.0215 12.914 11.5714C12.4639 11.1212 11.8533 10.8684 11.2168 10.8684H8.02527C7.47685 10.8684 6.95089 10.6505 6.5631 10.2627C6.17531 9.87491 5.95745 9.34895 5.95745 8.80054C5.95745 8.25212 6.17531 7.72616 6.5631 7.33837C6.95089 6.95057 7.47685 6.73272 8.02527 6.73272H12.8125C12.9043 6.73272 12.9787 6.65829 12.9787 6.56649C12.9787 6.47469 12.9043 6.40027 12.8125 6.40027H8.02527Z" fill="#BFC9E9"/>
+                                        </svg>
+                                        Возместим Вам до 500 000 грн
+                                    </div>
+                                    <div class="product-suggestion__info-controls">
+                                        <a href="/" class="btn yellow product-suggestion__info-order">Заказать</a>
+                                        <a href="/" class="product-suggestion__info-details">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="accordion-with-card">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col col-8">
+                                <div class="accordion" id="faq__accordion">
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="faq-elem-header-1">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-elem-body-1" aria-expanded="true" aria-controls="faq-elem-body-1">
+                                                Что такое электронный полис?
+                                            </button>
+                                        </h3>
+                                        <div id="faq-elem-body-1" class="accordion-collapse collapse" aria-labelledby="faq-elem-header-1" data-bs-parent="#faq__accordion">
+                                            <div class="accordion-body">
+                                                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="faq-elem-header-2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-elem-body-2" aria-expanded="true" aria-controls="faq-elem-body-2">
+                                                Что такое "франшиза"?
+                                            </button>
+                                        </h3>
+                                        <div id="faq-elem-body-2" class="accordion-collapse collapse" aria-labelledby="faq-elem-header-2" data-bs-parent="#faq__accordion">
+                                            <div class="accordion-body">
+                                                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="faq-elem-header-3">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-elem-body-3" aria-expanded="true" aria-controls="faq-elem-body-3">
+                                                Можно ли приехать в офис?
+                                            </button>
+                                        </h3>
+                                        <div id="faq-elem-body-3" class="accordion-collapse collapse" aria-labelledby="faq-elem-header-3" data-bs-parent="#faq__accordion">
+                                            <div class="accordion-body">
+                                                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="faq-elem-header-4">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-elem-body-4" aria-expanded="true" aria-controls="faq-elem-body-4">
+                                                Есть ли у вас скидка для пенсионеров и льготников?
+                                            </button>
+                                        </h3>
+                                        <div id="faq-elem-body-4" class="accordion-collapse collapse" aria-labelledby="faq-elem-header-4" data-bs-parent="#faq__accordion">
+                                            <div class="accordion-body">
+                                                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="faq-elem-header-5">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-elem-body-5" aria-expanded="true" aria-controls="faq-elem-body-5">
+                                                Где я могу почитать ваши правила страхования и оферты?
+                                            </button>
+                                        </h3>
+                                        <div id="faq-elem-body-5" class="accordion-collapse collapse" aria-labelledby="faq-elem-header-5" data-bs-parent="#faq__accordion">
+                                            <div class="accordion-body">
+                                                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="faq-elem-header-6">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-elem-body-6" aria-expanded="true" aria-controls="faq-elem-body-6">
+                                                Где я могу почитать ваши правила страхования и оферты?
+                                            </button>
+                                        </h3>
+                                        <div id="faq-elem-body-6" class="accordion-collapse collapse" aria-labelledby="faq-elem-header-5" data-bs-parent="#faq__accordion">
+                                            <div class="accordion-body">
+                                                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-4">
+                                <div class="card">
+                                    <img src="img/temp/news-card-1.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Розыгрыш от VUSO: дарим полный Check-up!</h5>
+                                        <div class="card-footer">
+                                            <a href="#" class="card-link">Читать полностью</a>
+                                            <div class="card-date">12 мая 2021</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="subscribe">
+                    <div class="container">
+                        <div class="subscribe__inner">
+                            <div class="subscribe__text">
+                                <h2 class="subscribe__title">Будьте в курсе <br>новостей от VUSO</h2>
+                                <div class="subscribe__descr">
+                                    Подписывайтесь на email-рассылку и узнавайте <br>про все новости первыми!
+                                </div>
+                            </div>
+                            <form class="subscribe__form">
+                                <input type="email" class="subscribe__input" placeholder="Email">
+                                <button class="btn yellow subscribe__submit">
+                                    <span>Отправить</span>
+                                    <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.91708 16.3412C0.627632 16.0452 0.627632 15.5653 0.91708 15.2693L7.31064 8.73155L0.91708 2.19378C0.627632 1.89781 0.627632 1.41793 0.91708 1.12196C1.20653 0.825982 1.67581 0.825982 1.96526 1.12196L8.88291 8.19564C9.17236 8.49162 9.17236 8.97149 8.88291 9.26747L1.96526 16.3412C1.67581 16.6371 1.20653 16.6371 0.91708 16.3412Z" fill="currentColor"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.702595 16.5509C0.299127 16.1383 0.299127 15.4721 0.702595 15.0596L6.89103 8.73155L0.702595 2.40354C0.299127 1.99097 0.299127 1.32477 0.702595 0.912205C1.10972 0.495899 1.77262 0.495899 2.17975 0.912205L9.09739 7.98589C9.50086 8.39846 9.50086 9.06465 9.09739 9.47722L2.17975 16.5509C1.77262 16.9672 1.10972 16.9672 0.702595 16.5509ZM1.13156 15.4791C0.956137 15.6585 0.956137 15.952 1.13156 16.1314C1.30334 16.307 1.579 16.307 1.75078 16.1314L8.66843 9.05771C8.84385 8.87833 8.84385 8.58478 8.66843 8.4054L1.75078 1.33171C1.579 1.15606 1.30334 1.15606 1.13156 1.33171C0.956137 1.5111 0.956137 1.80465 1.13156 1.98403L7.52512 8.5218C7.63914 8.63839 7.63914 8.82472 7.52512 8.94131L1.13156 15.4791Z" fill="currentColor"/>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <!-- if inner page a.logo -->
+                        <div class="col-auto footer__logo">
+                            <svg width="86" height="22" viewBox="0 0 86 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.4958 0.980713H17.2552C16.0056 0.980713 15.5245 1.28629 15.0016 2.41019C14.9546 2.52413 10.0499 13.8926 9.65777 14.7057C9.61071 14.799 9.54797 14.9492 9.48522 15.1149C9.39633 14.9026 9.31267 14.7161 9.26561 14.6281C8.95188 14.0065 5.6891 6.36714 3.98973 2.38429C3.50868 1.43131 3.05378 0.980713 1.7518 0.980713H1.51127C0.73218 0.980713 0.366163 1.3588 0.214527 1.58669C-0.0521427 1.99585 -0.0625999 2.55003 0.193612 3.12493C0.47074 3.66875 8.39763 20.6826 8.47606 20.8483C8.78979 21.5579 9.2813 21.6356 9.47999 21.6356C9.67869 21.6356 10.1702 21.5579 10.4787 20.8587C10.5571 20.6878 18.4631 3.76715 18.85 2.96437C19.0696 2.52931 19.054 2.07872 18.8134 1.69545C18.552 1.26557 18.0239 0.980713 17.4958 0.980713Z" fill="#151826"/>
+                                <path d="M36.1365 0.980713H36.058C35.0803 0.980713 34.2855 1.76796 34.2855 2.73648V12.9862C34.2855 16.8448 31.6397 18.2121 29.3756 18.2121C27.1115 18.2121 24.4658 16.8448 24.4658 12.9862V2.73648C24.4658 1.76796 23.671 0.980713 22.6932 0.980713H22.5729C21.5951 0.980713 20.8004 1.76796 20.8004 2.73648V13.1468C20.8004 19.4085 25.2292 21.6408 29.3756 21.6408C31.3783 21.6408 37.909 21.0296 37.909 13.1468V2.73648C37.909 1.76796 37.1143 0.980713 36.1365 0.980713Z" fill="#151826"/>
+                                <path d="M47.9171 7.77043C47.6557 7.65648 47.4413 7.56844 47.3106 7.50629C46.7093 7.21107 45.9145 6.71904 45.9145 5.88518C45.9145 4.67323 47.1642 3.9326 48.0583 3.9326C49.1041 3.9326 49.3551 4.13977 49.7002 4.42463L49.8257 4.52303C49.925 4.60072 50.0296 4.69395 50.1446 4.79235C50.7564 5.331 51.9015 6.33059 53.1303 5.47084C53.9407 4.95291 54.1865 3.99993 53.7002 3.20232C52.9107 1.93858 50.7355 0.964881 49.0466 0.597154C48.4453 0.462493 47.2949 0.446955 46.2282 0.685201C45.4335 0.90791 44.7223 1.12544 44.0792 1.56568C42.5994 2.58599 41.7524 4.16048 41.7524 5.88518C41.7524 8.2262 43.1276 9.46922 44.1733 10.2099C44.9786 10.7485 45.8152 11.0334 46.6988 11.3338C47.4779 11.5979 48.2884 11.8724 49.1145 12.3437C51.1172 13.509 51.729 14.2497 51.6244 15.3788C51.5093 16.6891 50.0819 18.2118 48.4034 18.2118C46.7825 18.2118 45.606 17.6525 44.5759 16.3835C44.5184 16.3162 44.4557 16.223 44.3877 16.1246C43.9746 15.529 43.0125 14.1306 41.2975 14.9178C39.8282 15.5963 40.1785 16.974 40.4347 17.4297C42.2334 20.2628 44.8374 21.6405 48.3982 21.6405C50.9499 21.6405 53.0884 20.6771 54.4061 18.9214C55.7708 17.1086 56.0584 14.6433 55.1434 12.6286C54.1499 10.4326 49.9407 8.63536 47.9171 7.77043Z" fill="#151826"/>
+                                <path d="M67.9486 0.503662C62.0662 0.503662 57.2818 5.24268 57.2818 11.0693C57.2818 16.896 62.0662 21.635 67.9486 21.635C73.8519 21.635 78.6572 16.896 78.6572 11.0693C78.6572 5.24268 73.8572 0.503662 67.9486 0.503662ZM67.9486 18.2064C64.1316 18.2064 60.9001 14.9383 60.9001 11.0693C60.9001 7.20044 64.1263 3.93233 67.9486 3.93233C71.8336 3.93233 74.997 7.13311 74.997 11.0693C74.997 15.0056 71.8336 18.2064 67.9486 18.2064Z" fill="#151826"/>
+                                <path d="M77.3607 11.7636C71.6822 8.36083 67.175 11.4787 67.8861 13.162C72.5868 10.7536 73.8103 15.6014 79.3581 15.7879C84.3255 15.6118 86.0876 12.7839 85.9621 10.2823C85.8575 8.32975 83.5464 15.4668 77.3607 11.7636Z" fill="#FFCE6B"/>
+                            </svg>
+                        </div>
+                        <div class="col-auto footer__insurance-case">
+                            <button class="footer__insurance-case__btn">
+                                <span>Страховой случай</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.98992 0.501674C5.98608 0.534478 4.07565 1.35452 2.6716 2.78454C1.96908 3.48395 1.4148 4.31782 1.04187 5.2363C0.66895 6.15478 0.485047 7.13902 0.501157 8.13019C0.500004 9.0987 0.689994 10.0579 1.06024 10.9529C1.43048 11.8478 1.9737 12.6609 2.65876 13.3455C3.34383 14.0302 4.15726 14.5729 5.05246 14.9426C5.94766 15.3123 6.90702 15.5017 7.87555 15.5H8.00929C10.0137 15.4794 11.9281 14.6645 13.3324 13.2341C14.7367 11.8037 15.5163 9.87464 15.4999 7.87022C15.5022 6.88997 15.3085 5.91914 14.9301 5.01485C14.5518 4.11055 13.9964 3.29104 13.2967 2.6045C12.597 1.91797 11.767 1.37827 10.8557 1.01714C9.94434 0.656018 8.96998 0.48076 7.98992 0.501674ZM7.06312 10.8393C7.05861 10.7167 7.07859 10.5945 7.12186 10.4798C7.16514 10.3651 7.23086 10.2601 7.31518 10.1711C7.3995 10.0821 7.50072 10.0108 7.61292 9.96131C7.72513 9.91186 7.84607 9.88528 7.96867 9.88312H7.98554C8.23215 9.88359 8.46901 9.97952 8.64645 10.1508C8.82389 10.322 8.92813 10.5553 8.93734 10.8018C8.94193 10.9243 8.92202 11.0466 8.87877 11.1613C8.83552 11.2761 8.76981 11.3811 8.68547 11.4701C8.60114 11.5591 8.49989 11.6305 8.38764 11.6799C8.2754 11.7293 8.15442 11.7558 8.03179 11.7579H8.01492C7.7684 11.7571 7.53172 11.6611 7.35435 11.4899C7.17698 11.3187 7.07263 11.0856 7.06312 10.8393ZM7.37559 8.3133V4.56372C7.37559 4.39798 7.44144 4.23902 7.55864 4.12183C7.67584 4.00463 7.8348 3.93879 8.00054 3.93879C8.16629 3.93879 8.32525 4.00463 8.44245 4.12183C8.55965 4.23902 8.62549 4.39798 8.62549 4.56372V8.3133C8.62549 8.47904 8.55965 8.63799 8.44245 8.75519C8.32525 8.87239 8.16629 8.93823 8.00054 8.93823C7.8348 8.93823 7.67584 8.87239 7.55864 8.75519C7.44144 8.63799 7.37559 8.47904 7.37559 8.3133Z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto footer__socials">
+                            <a href="/" class="footer__social facebook" rel="noindex nofollow noreferrer" target="_blank">
+                                <svg width="8" height="18" viewBox="0 0 8 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.31965 17.4001V8.99911H7.68636L8 6.10409H5.31965L5.32367 4.6551C5.32367 3.90003 5.39689 3.49545 6.50367 3.49545H7.98324V0.600098H5.6162C2.773 0.600098 1.77227 2.0045 1.77227 4.36625V6.10442H0V8.99944H1.77227V17.4001H5.31965Z" fill="#151826"/>
+                                </svg>
+                            </a>
+                            <a href="/" class="footer__social tiktok" rel="noindex nofollow noreferrer" target="_blank">
+                                <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.7914 4.75979C15.7505 4.75979 14.7901 4.41495 14.0188 3.83322C13.1343 3.16634 12.4987 2.18811 12.2743 1.06062C12.2187 0.782044 12.1888 0.49456 12.186 0.199951H9.21244V8.32502L9.20888 12.7755C9.20888 13.9653 8.43406 14.9742 7.36001 15.329C7.0483 15.432 6.71165 15.4808 6.36112 15.4615C5.91368 15.4369 5.49439 15.3019 5.12996 15.0839C4.35443 14.6201 3.82862 13.7787 3.81437 12.8161C3.79193 11.3117 5.00813 10.0852 6.51145 10.0852C6.80819 10.0852 7.09318 10.1336 7.36001 10.2216V8.00084V7.20251C7.07858 7.16083 6.79216 7.1391 6.50254 7.1391C4.85708 7.1391 3.31813 7.82308 2.21807 9.05531C1.38661 9.98651 0.887882 11.1746 0.810935 12.4203C0.71012 14.0569 1.30895 15.6126 2.47029 16.7604C2.64093 16.9289 2.82011 17.0853 3.0075 17.2295C4.00318 17.9958 5.22044 18.4112 6.50254 18.4112C6.79216 18.4112 7.07858 18.3898 7.36001 18.3481C8.55768 18.1707 9.66272 17.6225 10.5348 16.7604C11.6064 15.7013 12.1984 14.2952 12.2048 12.7987L12.1895 6.15268C12.7007 6.54704 13.2597 6.87335 13.8596 7.12664C14.7925 7.52028 15.7818 7.71977 16.7999 7.71942V5.56026V4.75908C16.8007 4.75979 16.7921 4.75979 16.7914 4.75979Z" fill="#151826"/>
+                                </svg>
+                            </a>
+                            <a href="/" class="footer__social instagram" rel="noindex nofollow noreferrer" target="_blank">
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.60072 0C6.42804 0 6.15537 0.0095 5.30202 0.0483333C4.45035 0.0873333 3.86901 0.222167 3.36034 0.42C2.83417 0.624333 2.38783 0.897667 1.94316 1.3425C1.49815 1.78717 1.22482 2.2335 1.01981 2.7595C0.821478 3.26833 0.686476 3.84983 0.648143 4.70117C0.609976 5.5545 0.599976 5.82733 0.599976 8C0.599976 10.1727 0.609642 10.4445 0.648309 11.2978C0.687476 12.1495 0.822311 12.7308 1.01998 13.2395C1.22448 13.7657 1.49782 14.212 1.94266 14.6567C2.38716 15.1017 2.8335 15.3757 3.35934 15.58C3.86834 15.7778 4.44985 15.9127 5.30136 15.9517C6.1547 15.9905 6.4272 16 8.59973 16C10.7726 16 11.0444 15.9905 11.8978 15.9517C12.7494 15.9127 13.3314 15.7778 13.8404 15.58C14.3665 15.3757 14.8121 15.1017 15.2566 14.6567C15.7016 14.212 15.975 13.7657 16.18 13.2397C16.3766 12.7308 16.5116 12.1493 16.5516 11.298C16.59 10.4447 16.6 10.1727 16.6 8C16.6 5.82733 16.59 5.55467 16.5516 4.70133C16.5116 3.84967 16.3766 3.26833 16.18 2.75967C15.975 2.2335 15.7016 1.78717 15.2566 1.3425C14.8116 0.8975 14.3666 0.624167 13.8399 0.42C13.3299 0.222167 12.7483 0.0873333 11.8966 0.0483333C11.0433 0.0095 10.7716 0 8.59823 0L8.60072 0Z" fill="#151826"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1611 2.76997C12.471 2.76997 11.9111 3.3292 11.9111 4.01952C11.9111 4.70962 12.471 5.26951 13.1611 5.26951C13.8512 5.26951 14.4111 4.70962 14.4111 4.01952C14.4111 3.32942 13.8512 2.76953 13.1611 2.76953V2.76997Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.60065 5.3335C10.0733 5.3335 11.2673 6.52733 11.2673 8.00016C11.2673 9.47283 10.0733 10.6668 8.60065 10.6668C7.12781 10.6668 5.93396 9.47283 5.93396 8.00016C5.93396 6.52733 7.12781 5.3335 8.60065 5.3335V5.3335Z" stroke="white" stroke-width="2"/>
+                                </svg>
+                            </a>
+                            <a href="/" class="footer__social twitter" rel="noindex nofollow noreferrer" target="_blank">
+                                <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.4001 0.00896646C19.5295 0.611275 18.5656 1.07195 17.5455 1.37323C16.998 0.755757 16.2704 0.318104 15.461 0.119469C14.6517 -0.0791667 13.7996 -0.0292013 13.0202 0.262607C12.2407 0.554416 11.5714 1.07399 11.1028 1.75105C10.6342 2.42812 10.3889 3.23001 10.4001 4.04827V4.93995C8.80248 4.98058 7.21943 4.63305 5.79191 3.92829C4.3644 3.22354 3.13674 2.18345 2.21827 0.900645C2.21827 0.900645 -1.4181 8.92575 6.76372 12.4925C4.89147 13.739 2.66114 14.364 0.400085 14.2758C8.5819 18.7342 18.5819 14.2758 18.5819 4.02152C18.5811 3.77315 18.5567 3.52539 18.5092 3.28143C19.437 2.38395 20.0917 1.25082 20.4001 0.00896646Z" fill="black"/>
+                                </svg>
+                            </a>
+                            <a href="/" class="footer__social youtube" rel="noindex nofollow noreferrer" target="_blank">
+                                <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.7184 2.34799C22.5943 1.88753 22.3413 1.46563 21.9853 1.12491C21.6292 0.784192 21.1825 0.536725 20.6904 0.407503C18.8923 8.67467e-08 11.6999 0 11.6999 0C11.6999 0 4.50757 2.89156e-08 2.70948 0.446313C2.21735 0.575535 1.77069 0.823002 1.41459 1.16372C1.05849 1.50444 0.805584 1.92634 0.681402 2.3868C0.352326 4.08042 0.191356 5.79849 0.200518 7.5194C0.188788 9.25328 0.349768 10.9844 0.681402 12.6908C0.818307 13.137 1.07688 13.5428 1.43215 13.8692C1.78742 14.1955 2.22736 14.4313 2.70948 14.5537C4.50757 15 11.6999 15 11.6999 15C11.6999 15 18.8923 15 20.6904 14.5537C21.1825 14.4245 21.6292 14.177 21.9853 13.8363C22.3413 13.4956 22.5943 13.0737 22.7184 12.6132C23.045 10.9323 23.2059 9.22736 23.1993 7.5194C23.2111 5.78553 23.0501 4.05436 22.7184 2.34799Z" fill="black"/>
+                                    <path d="M10.2001 10L14.2001 7.5L10.2001 5V10Z" fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a href="/" class="footer__social telegram" rel="noindex nofollow noreferrer" target="_blank">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.52246 15.0309C7.98226 15.0309 8.18541 14.8303 8.44205 14.5923L10.8943 12.3179L7.83543 10.5586" fill="#151826"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.83511 10.559L15.247 15.7821C16.0928 16.2272 16.7032 15.9967 16.9139 15.0331L19.931 1.47242C20.2398 0.291209 19.4589 -0.244533 18.6497 0.105846L0.93382 6.6215C-0.275459 7.08414 -0.268408 7.72763 0.713393 8.01436L5.2597 9.3678L15.7849 3.03429C16.2818 2.7469 16.7378 2.90141 16.3635 3.21825" fill="#151826"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-auto footer__bots">
+                            <a href="/" class="footer__bot" target="_blank">
+                                <span>Telegram-бот</span>
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.52246 15.0309C7.98226 15.0309 8.18541 14.8303 8.44205 14.5923L10.8943 12.3179L7.83543 10.5586" fill="#151826"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.83511 10.559L15.247 15.7821C16.0928 16.2272 16.7032 15.9967 16.9139 15.0331L19.931 1.47242C20.2398 0.291209 19.4589 -0.244533 18.6497 0.105846L0.93382 6.6215C-0.275459 7.08414 -0.268408 7.72763 0.713393 8.01436L5.2597 9.3678L15.7849 3.03429C16.2818 2.7469 16.7378 2.90141 16.3635 3.21825" fill="#151826"/>
+                                </svg>
+
+                            </a>
+                            <a href="/" class="footer__bot" target="_blank">
+                                <span>Viber-бот</span>
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_901:21406)">
+                                    <path d="M20.6676 12.6404C21.2882 7.41703 20.3695 4.11936 18.7125 2.62783L18.7133 2.62696C16.0388 0.079826 7.00638 -0.297174 3.80665 2.74136C2.36972 4.22769 1.86358 6.40909 1.80812 9.10962C1.75265 11.811 1.68678 16.8715 6.40232 18.2443H6.40665L6.40232 20.3408C6.40232 20.3408 6.37025 21.1901 6.91278 21.3608C7.53332 21.5619 7.81412 21.1676 9.74418 18.8622C12.9716 19.1422 15.4503 18.5008 15.732 18.4072C16.3837 18.1888 20.0714 17.7009 20.6676 12.6404ZM10.0623 17.3872C10.0623 17.3872 8.01952 19.9343 7.38425 20.5956C7.17625 20.8105 6.94832 20.7906 6.95178 20.3642C6.95178 20.0842 6.96738 16.8836 6.96738 16.8836C2.96945 15.7379 3.20518 11.4288 3.24852 9.17462C3.29185 6.91956 3.70438 5.07269 4.92118 3.82903C7.72832 1.19696 15.6471 1.78543 17.6647 3.68169C20.1312 5.86829 19.2532 12.0459 19.2584 12.2565C18.7514 16.4806 15.7632 16.7484 15.2137 16.9313C14.9788 17.0093 12.7992 17.57 10.0623 17.3872Z" fill="#151826"/>
+                                    <path d="M11.1924 4.32446C10.8587 4.32446 10.8587 4.84446 11.1924 4.8488C13.7811 4.86873 15.9131 6.67313 15.9365 9.98293C15.9365 10.3322 16.4479 10.3279 16.4435 9.9786H16.4427C16.4149 6.41226 14.0871 4.3444 11.1924 4.32446Z" fill="#151826"/>
+                                    <path d="M14.5975 9.43416C14.5897 9.77909 15.1002 9.79556 15.1045 9.44629C15.147 7.47983 13.9345 5.86003 11.6561 5.68929C11.3224 5.66503 11.2877 6.18936 11.6205 6.21363C13.5965 6.36356 14.6374 7.71209 14.5975 9.43416Z" fill="#151826"/>
+                                    <path d="M14.0515 11.6708C13.6234 11.423 13.1875 11.5772 13.0072 11.8208L12.6302 12.3087C12.4387 12.5566 12.0807 12.5236 12.0807 12.5236C9.46861 11.8329 8.77008 9.09943 8.77008 9.09943C8.77008 9.09943 8.73802 8.72936 8.97722 8.53089L9.44868 8.14089C9.68441 7.95369 9.83348 7.50303 9.59341 7.06016C8.95208 5.90143 8.52135 5.50189 8.30208 5.19509C8.07155 4.90649 7.72488 4.84149 7.36435 5.03649H7.35655C6.60688 5.47502 5.78615 6.29576 6.04875 7.14076C6.49682 8.03169 7.32015 10.8718 9.94441 13.0176C11.1777 14.0325 13.1294 15.0725 13.9579 15.3126L13.9657 15.3247C14.7821 15.5968 15.576 14.744 15.9998 13.9718V13.9658C16.1879 13.5922 16.1255 13.2386 15.8507 13.0072C15.3637 12.5323 14.6287 12.008 14.0515 11.6708Z" fill="#151826"/>
+                                    <path d="M12.0131 7.62352C12.846 7.67205 13.2499 8.10712 13.2932 9.00066C13.3088 9.34992 13.8158 9.32566 13.8002 8.97639C13.7448 7.80985 13.1363 7.15985 12.0409 7.09919C11.7072 7.07925 11.676 7.60359 12.0131 7.62352Z" fill="#151826"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_901:21406">
+                                    <rect width="20.8" height="20.8" fill="white" transform="translate(0.599998 0.600098)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="row col-auto footer__contacts align-items-center justify-content-between">
+                            <div class="col-auto">
+                                <a href="mailto:otdelenie-kiev@vuso.ua" class="footer__mail">otdelenie-kiev@vuso.ua</a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="tel:0987658642" class="footer__phone">098 765 86 42</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto footer__feedback">
+                            <button class="btn black footer__feedback__btn">Оставить отзыв о компании</button>
+                        </div>
+                        <div class="col-auto footer__menu">
+                            <a href="/">Вопросы и ответы</a>
+                            <a href="/">Раскрытие информации</a>
+                            <!-- <a href="/">Лицензии</a> -->
+                            <!-- <a href="/">Оферты</a> -->
+                            <!-- <a href="/">Политика конфиденциальности</a> -->
+                        </div>
+                        <div class="col-auto footer__search">
+                            <form action="/" class="footer__search__form">
+                                <input type="text" placeholder="Возник вопрос?" required class="ask-input" autocomplete="off">
+                                <input type="email" placeholder="Ваш email" required class="mail-input hidden" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,10}$">
+                                <button type="button" class="footer-form-submit"></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto footer__develop">
+                            <a href="/" rel="noindex nofollow noreferrer" target="_blank">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.82009 10.7835H5.4312C7.61 10.7835 9.38255 9.1248 9.38255 7.08611C9.38255 5.04742 7.61 3.38873 5.4312 3.38873H2.82009V10.7835ZM19 17.1848H7.80909L15.8078 9.70047C16.3031 9.23691 16.3031 8.48265 15.8078 8.01896C15.5677 7.79448 15.2486 7.67077 14.909 7.67077C14.5697 7.67077 14.2506 7.79448 14.0106 8.01896L10.2194 11.5664C8.9405 12.7631 7.23997 13.4222 5.4312 13.4222H0V0.75H5.4312C8.73793 0.75 11.5869 3.02607 12.1138 6.06501C13.7159 4.6613 16.239 4.69102 17.8017 6.15313C19.3966 7.64561 19.3966 10.0739 17.8017 11.5664L14.6175 14.5461H19V17.1848Z" fill="#151826"/>
+                                </svg>
+                            </a>
+                            <a href="/" rel="noindex nofollow noreferrer" target="_blank">
+                                <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.7806 0.061107L12.9993 4.12387L17.4592 6.18429L1.22283 0.061107C1.0873 0.00912059 0.940562 -0.0101353 0.795479 0.00502871C0.650397 0.0201928 0.511405 0.0693134 0.390694 0.148082C0.269982 0.226851 0.171238 0.332862 0.103121 0.456817C0.0350053 0.580773 -0.000402149 0.718887 4.429e-06 0.859045V13.1413C-0.000455596 13.2815 0.034927 13.4196 0.103045 13.5435C0.171163 13.6675 0.269931 13.7735 0.390675 13.8522C0.511419 13.9309 0.650444 13.98 0.79554 13.995C0.940635 14.0101 1.08736 13.9907 1.22283 13.9386L12.0041 9.87647L7.54076 7.8154L23.7772 13.9386C23.9126 13.9907 24.0594 14.0101 24.2045 13.995C24.3496 13.98 24.4886 13.9309 24.6093 13.8522C24.7301 13.7735 24.8288 13.6675 24.897 13.5435C24.9651 13.4196 25.0005 13.2815 25 13.1413V0.859045C25.0002 0.719293 24.9648 0.58162 24.8968 0.458031C24.8289 0.334442 24.7305 0.228691 24.6103 0.150002C24.49 0.071312 24.3515 0.0220725 24.2069 0.00657778C24.0623 -0.00891692 23.9159 0.00980407 23.7806 0.061107Z" fill="#151826"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-auto footer__payment-systems">
+                            <svg width="38" height="12" viewBox="0 0 38 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.9333 11.4585L15.8635 0.601318H18.8794L17.0095 11.4585H13.9333Z" fill="#151826"/>
+                                <path d="M13.9333 11.4585L16.4064 0.601318H18.8794L17.0095 11.4585H13.9333Z" fill="#151826"/>
+                                <path d="M27.927 0.722285C27.3238 0.481016 26.3587 0.239746 25.1524 0.239746C22.1365 0.239746 19.9651 1.74768 19.9651 3.91911C19.9651 5.54768 21.473 6.39213 22.6794 6.93498C23.8857 7.47784 24.2476 7.83975 24.2476 8.32229C24.2476 9.04609 23.2826 9.408 22.4381 9.408C21.2318 9.408 20.5683 9.22705 19.5429 8.80483L19.1206 8.62387L18.6984 11.0969C19.4222 11.3985 20.7492 11.7001 22.1365 11.7001C25.3334 11.7001 27.4445 10.1921 27.4445 7.90006C27.4445 6.6334 26.6603 5.66832 24.8508 4.88419C23.7651 4.34133 23.1016 4.03975 23.1016 3.49689C23.1016 3.01435 23.6445 2.53181 24.8508 2.53181C25.8762 2.53181 26.6 2.71276 27.1429 2.95403L27.4445 3.07467L27.927 0.722285Z" fill="#151826"/>
+                                <path d="M27.927 0.722285C27.3238 0.481016 26.3587 0.239746 25.1524 0.239746C22.1365 0.239746 20.508 1.74768 20.508 3.91911C20.508 5.54768 21.473 6.39213 22.6794 6.93498C23.8857 7.47784 24.2476 7.83975 24.2476 8.32229C24.2476 9.04609 23.2826 9.408 22.4381 9.408C21.2318 9.408 20.5683 9.22705 19.5429 8.80483L19.1206 8.62387L18.6984 11.0969C19.4222 11.3985 20.7492 11.7001 22.1365 11.7001C25.3334 11.7001 27.4445 10.1921 27.4445 7.90006C27.4445 6.6334 26.6603 5.66832 24.8508 4.88419C23.7651 4.34133 23.1016 4.03975 23.1016 3.49689C23.1016 3.01435 23.6445 2.53181 24.8508 2.53181C25.8762 2.53181 26.6 2.71276 27.1429 2.95403L27.4445 3.07467L27.927 0.722285Z" fill="#151826"/>
+                                <path d="M33.1143 0.601318C32.3905 0.601318 31.8476 0.661637 31.546 1.38545L27.0222 11.4585H30.2794L30.8825 9.64894H34.7428L35.1048 11.4585H38L35.4667 0.601318H33.1143ZM31.727 7.83942C31.9079 7.29656 32.9333 4.64259 32.9333 4.64259C32.9333 4.64259 33.1746 3.9791 33.3555 3.55688L33.5365 4.58227C33.5365 4.58227 34.1397 7.29656 34.2603 7.89974H31.727V7.83942Z" fill="#151826"/>
+                                <path d="M33.8381 0.601318C33.1143 0.601318 32.5714 0.661637 32.2698 1.38545L27.0222 11.4585H30.2794L30.8825 9.64894H34.7428L35.1048 11.4585H38L35.4667 0.601318H33.8381ZM31.727 7.83942C31.9682 7.23624 32.9333 4.64259 32.9333 4.64259C32.9333 4.64259 33.1746 3.9791 33.3555 3.55688L33.5365 4.58227C33.5365 4.58227 34.1397 7.29656 34.2603 7.89974H31.727V7.83942Z" fill="#151826"/>
+                                <path d="M8.38416 8.20155L8.08257 6.6333C7.53972 4.82377 5.79051 2.83329 3.86035 1.86821L6.57464 11.519H9.83178L14.7175 0.661865H11.4604L8.38416 8.20155Z" fill="#151826"/>
+                                <path d="M8.38416 8.20155L8.08257 6.6333C7.53972 4.82377 5.79051 2.83329 3.86035 1.86821L6.57464 11.519H9.83178L14.7175 0.661865H12.0635L8.38416 8.20155Z" fill="#151826"/>
+                                <path d="M0 0.601318L0.542857 0.721954C4.40317 1.62672 7.05714 3.91878 8.08254 6.63306L6.99683 1.50608C6.81587 0.782271 6.27302 0.601318 5.60952 0.601318H0Z" fill="#FFCE6B"/>
+                                <path d="M0 0.601318C3.86032 1.50608 7.05714 3.85846 8.08254 6.57275L7.05714 2.29021C6.87619 1.5664 6.27302 1.14418 5.60952 1.14418L0 0.601318Z" fill="#FFCE6B"/>
+                                <path d="M0 0.601318C3.86032 1.50608 7.05714 3.85846 8.08254 6.57275L7.35873 4.22037C7.17778 3.49656 6.93651 2.77275 6.09206 2.47116L0 0.601318Z" fill="#FFCE6B"/>
+                                <path d="M11.4 7.83985L9.34916 5.78906L8.38408 8.08112L8.14282 6.57319C7.59996 4.76366 5.85075 2.77319 3.92059 1.80811L6.63488 11.4589H9.89202L11.4 7.83985Z" fill="#151826"/>
+                                <path d="M17.0095 11.4591L14.4158 8.80518L13.9333 11.4591H17.0095Z" fill="#151826"/>
+                                <path d="M23.946 7.71899C24.1873 7.96026 24.3079 8.14122 24.2476 8.38249C24.2476 9.1063 23.2825 9.4682 22.438 9.4682C21.2317 9.4682 20.5682 9.28725 19.5428 8.86503L19.1206 8.68408L18.6984 11.1571C19.4222 11.4587 20.7492 11.7603 22.1365 11.7603C24.0666 11.7603 25.6349 11.2174 26.5396 10.2523L23.946 7.71899Z" fill="#151826"/>
+                                <path d="M27.4444 11.4587H30.2793L30.8825 9.64919H34.7428L35.1047 11.4587H37.9999L36.9745 7.05554L33.3555 3.55713L33.5364 4.52221C33.5364 4.52221 34.1396 7.23649 34.2603 7.83967H31.7269C31.9682 7.23649 32.9333 4.64284 32.9333 4.64284C32.9333 4.64284 33.1745 3.97935 33.3555 3.55713" fill="#151826"/>
+                            </svg>
+
+                            <svg width="37" height="29" viewBox="0 0 37 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.14203 27.8434V26C7.15282 25.845 7.13051 25.6894 7.07658 25.5437C7.02265 25.3979 6.93835 25.2654 6.8293 25.155C6.72024 25.0445 6.58894 24.9586 6.44415 24.903C6.29937 24.8474 6.14442 24.8234 5.98965 24.8326C5.78709 24.8193 5.58469 24.8608 5.40356 24.9527C5.22243 25.0445 5.0692 25.1834 4.95984 25.3548C4.86016 25.1885 4.7176 25.0522 4.54715 24.9603C4.37671 24.8684 4.18469 24.8243 3.99132 24.8326C3.82276 24.8241 3.65491 24.8598 3.50439 24.9364C3.35387 25.0129 3.22589 25.1275 3.13314 25.2688V24.9063H2.49561V27.8434H3.13924V26.2151C3.12532 26.1146 3.13378 26.0123 3.164 25.9154C3.19422 25.8186 3.24545 25.7297 3.31402 25.6551C3.38259 25.5805 3.46679 25.5221 3.56057 25.484C3.65436 25.4458 3.7554 25.429 3.85644 25.4347C4.2794 25.4347 4.49397 25.7112 4.49397 26.2089V27.8434H5.1376V26.2151C5.12473 26.1148 5.13392 26.0129 5.16453 25.9165C5.19513 25.8202 5.24641 25.7317 5.31476 25.6573C5.38311 25.583 5.46688 25.5245 5.56017 25.486C5.65347 25.4476 5.75403 25.4301 5.8548 25.4347C6.28999 25.4347 6.4984 25.7112 6.4984 26.2089V27.8434H7.14203ZM16.6678 24.9063H15.6258V24.0153H14.9821V24.9063H14.3875V25.49H14.9821V26.8295C14.9821 27.5116 15.2457 27.9171 15.9997 27.9171C16.2814 27.918 16.5576 27.8392 16.7966 27.6898L16.6127 27.1429C16.4417 27.2451 16.2477 27.3022 16.0487 27.3088C15.73 27.3088 15.6258 27.1121 15.6258 26.8173V25.49H16.6678V24.9063ZM22.105 24.8326C21.9496 24.828 21.7958 24.8655 21.6599 24.9412C21.5239 25.0169 21.4109 25.128 21.3327 25.2627V24.9063H20.7013V27.8434H21.3388V26.1966C21.3388 25.7112 21.5472 25.4409 21.9641 25.4409C22.1004 25.439 22.2358 25.464 22.3625 25.5146L22.5586 24.9124C22.413 24.8602 22.2596 24.8332 22.105 24.8326ZM13.8849 25.1398C13.524 24.9247 13.1091 24.818 12.6896 24.8326C11.9478 24.8326 11.4697 25.1889 11.4697 25.7726C11.4697 26.252 11.8253 26.5469 12.4811 26.6391L12.7815 26.682C13.1309 26.7311 13.2964 26.8234 13.2964 26.9893C13.2964 27.2166 13.0634 27.3457 12.6283 27.3457C12.2782 27.3558 11.9349 27.2475 11.6536 27.0384L11.3533 27.5361C11.7246 27.7961 12.1694 27.9297 12.6221 27.9171C13.468 27.9171 13.9584 27.5177 13.9584 26.9586C13.9584 26.4424 13.5723 26.172 12.9348 26.0799L12.6344 26.0368C12.3585 26 12.1379 25.9447 12.1379 25.7481C12.1379 25.533 12.3462 25.404 12.6957 25.404C13.0166 25.4088 13.3309 25.4955 13.6091 25.6559L13.8849 25.1398ZM30.9626 24.8326C30.8072 24.828 30.6534 24.8655 30.5175 24.9412C30.3816 25.0169 30.2685 25.128 30.1903 25.2627V24.9063H29.5589V27.8434H30.1964V26.1966C30.1964 25.7112 30.4048 25.4409 30.8216 25.4409C30.958 25.439 31.0934 25.464 31.2201 25.5146L31.4163 24.9124C31.2707 24.8602 31.1173 24.8332 30.9626 24.8326ZM22.7486 26.3748C22.7402 26.5817 22.775 26.7881 22.8509 26.9807C22.9268 27.1733 23.042 27.3479 23.1893 27.4932C23.3365 27.6384 23.5124 27.7512 23.7058 27.8242C23.8991 27.8972 24.1055 27.9289 24.3118 27.9171C24.6945 27.9364 25.0706 27.8115 25.3661 27.5669L25.0596 27.0507C24.8392 27.2191 24.5705 27.3118 24.2934 27.3149C24.0545 27.3004 23.8301 27.195 23.6661 27.0203C23.5021 26.8456 23.4107 26.6147 23.4107 26.3748C23.4107 26.1349 23.5021 25.904 23.6661 25.7293C23.8301 25.5546 24.0545 25.4492 24.2934 25.4347C24.5705 25.4379 24.8392 25.5305 25.0596 25.699L25.3661 25.1828C25.0706 24.9382 24.6945 24.8133 24.3118 24.8326C24.1055 24.8208 23.8991 24.8524 23.7058 24.9254C23.5125 24.9985 23.3365 25.1112 23.1893 25.2565C23.0421 25.4017 22.9268 25.5763 22.8509 25.7689C22.775 25.9615 22.7402 26.1679 22.7486 26.3748ZM28.7191 26.3748V24.9063H28.0816V25.2627C27.9728 25.1221 27.832 25.0097 27.6709 24.9349C27.5099 24.86 27.3333 24.825 27.156 24.8326C26.761 24.852 26.3885 25.0229 26.1158 25.31C25.8431 25.5972 25.691 25.9784 25.691 26.3748C25.691 26.7713 25.8431 27.1526 26.1158 27.4397C26.3885 27.7268 26.761 27.8977 27.156 27.9171C27.3333 27.9247 27.5099 27.8896 27.671 27.8148C27.832 27.74 27.9728 27.6275 28.0816 27.487V27.8434H28.7191V26.3748ZM26.3468 26.3748C26.3567 26.2015 26.417 26.0348 26.5203 25.8954C26.6235 25.7561 26.7652 25.65 26.9278 25.5904C27.0904 25.5307 27.267 25.5201 27.4355 25.5598C27.6041 25.5995 27.7575 25.6878 27.8766 25.8138C27.9957 25.9398 28.0755 26.098 28.106 26.2689C28.1365 26.4398 28.1164 26.6159 28.0483 26.7755C27.9802 26.9351 27.8669 27.0712 27.7225 27.1671C27.5781 27.2629 27.4089 27.3143 27.2357 27.3149C27.1143 27.3166 26.9939 27.293 26.8821 27.2457C26.7702 27.1984 26.6694 27.1283 26.5859 27.04C26.5023 26.9517 26.438 26.847 26.3969 26.7325C26.3557 26.618 26.3387 26.4962 26.3468 26.3748ZM18.6539 24.8326C18.2564 24.8535 17.8824 25.028 17.6104 25.3194C17.3384 25.6108 17.1896 25.9965 17.1951 26.3955C17.2007 26.7946 17.3602 27.1759 17.6402 27.4596C17.9202 27.7433 18.2989 27.9073 18.6968 27.9171C19.1342 27.9325 19.5619 27.786 19.8983 27.5054L19.5856 27.0323C19.3436 27.2268 19.0438 27.3349 18.7336 27.3395C18.5229 27.3573 18.3137 27.2922 18.1501 27.158C17.9865 27.0238 17.8814 26.831 17.857 26.6206H20.0332C20.0393 26.5407 20.0454 26.4608 20.0454 26.3748C20.0393 25.4593 19.4753 24.8326 18.6539 24.8326ZM18.6416 25.404C18.8342 25.4002 19.0204 25.4731 19.1594 25.6067C19.2985 25.7404 19.379 25.9237 19.3834 26.1168H17.8632C17.8744 25.9196 17.9621 25.7346 18.1075 25.6014C18.253 25.4682 18.4447 25.3973 18.6416 25.404ZM34.6344 26.3748V23.7266H33.9969V25.2627C33.8881 25.1221 33.7473 25.0097 33.5862 24.9349C33.4252 24.86 33.2487 24.825 33.0713 24.8326C32.6763 24.8519 32.3038 25.0229 32.0311 25.31C31.7584 25.5971 31.6063 25.9784 31.6063 26.3748C31.6063 26.7713 31.7584 27.1526 32.0311 27.4397C32.3038 27.7268 32.6763 27.8977 33.0713 27.9171C33.2487 27.9247 33.4252 27.8896 33.5863 27.8148C33.7473 27.74 33.8881 27.6275 33.9969 27.487V27.8434H34.6344V26.3748ZM35.6971 27.4177C35.7367 27.4175 35.776 27.4253 35.8124 27.4407C35.8475 27.4553 35.8795 27.4766 35.9067 27.5033C35.9336 27.5299 35.9552 27.5615 35.9702 27.5963C35.9855 27.632 35.9934 27.6706 35.9934 27.7095C35.9934 27.7484 35.9855 27.787 35.9702 27.8228C35.9551 27.8574 35.9335 27.8889 35.9067 27.9154C35.8794 27.9421 35.8475 27.9634 35.8124 27.9783C35.776 27.994 35.7368 28.0019 35.6971 28.0016C35.6388 28.0022 35.5816 27.9856 35.5327 27.9537C35.4837 27.9219 35.4452 27.8764 35.422 27.8228C35.4067 27.787 35.3988 27.7484 35.3988 27.7095C35.3988 27.6706 35.4067 27.6321 35.422 27.5963C35.4369 27.5615 35.4584 27.5299 35.4852 27.5033C35.5123 27.4764 35.5444 27.4551 35.5798 27.4407C35.617 27.4252 35.6569 27.4174 35.6971 27.4177ZM35.6971 27.9372C35.7273 27.9374 35.7573 27.9314 35.785 27.9193C35.8116 27.9077 35.8358 27.8912 35.8563 27.8707C35.8986 27.8278 35.9224 27.7699 35.9224 27.7096C35.9224 27.6493 35.8986 27.5915 35.8563 27.5486C35.8358 27.5281 35.8116 27.5118 35.785 27.5004C35.7572 27.4886 35.7273 27.4826 35.6971 27.4829C35.6664 27.4826 35.6359 27.4886 35.6076 27.5004C35.5805 27.5116 35.5559 27.528 35.5351 27.5486C35.4928 27.5915 35.469 27.6493 35.469 27.7096C35.469 27.77 35.4928 27.8278 35.5351 27.8707C35.5559 27.8914 35.5805 27.9079 35.6076 27.9193C35.6359 27.9313 35.6664 27.9374 35.6971 27.9372ZM35.7143 27.573C35.7429 27.5711 35.7714 27.5793 35.7946 27.5963C35.8039 27.6039 35.8112 27.6136 35.8161 27.6246C35.821 27.6356 35.8233 27.6476 35.8228 27.6596C35.8231 27.6699 35.8213 27.6801 35.8174 27.6897C35.8135 27.6992 35.8077 27.7078 35.8003 27.715C35.7826 27.7308 35.7601 27.7402 35.7364 27.7418L35.8249 27.8442H35.7557L35.6736 27.7426H35.6472V27.8442H35.5894V27.573H35.7143ZM35.6472 27.6238V27.6961H35.7136C35.7263 27.6967 35.739 27.6936 35.75 27.6871C35.7545 27.6841 35.7581 27.68 35.7604 27.6752C35.7628 27.6703 35.7639 27.665 35.7635 27.6596C35.7638 27.6543 35.7627 27.6491 35.7604 27.6443C35.758 27.6396 35.7544 27.6356 35.75 27.6327C35.739 27.6263 35.7263 27.6232 35.7136 27.6238H35.6472ZM32.2622 26.3748C32.2721 26.2015 32.3324 26.0349 32.4356 25.8955C32.5389 25.7561 32.6805 25.6501 32.8432 25.5904C33.0058 25.5308 33.1823 25.5202 33.3509 25.5599C33.5195 25.5996 33.6728 25.6879 33.7919 25.8139C33.911 25.9399 33.9907 26.0981 34.0212 26.269C34.0517 26.4399 34.0317 26.616 33.9635 26.7755C33.8954 26.9351 33.7822 27.0712 33.6378 27.1671C33.4934 27.2629 33.3242 27.3143 33.151 27.3149C33.0296 27.3166 32.9092 27.293 32.7974 27.2457C32.6855 27.1983 32.5847 27.1283 32.5012 27.04C32.4177 26.9517 32.3533 26.847 32.3122 26.7325C32.2711 26.618 32.254 26.4962 32.2622 26.3748ZM10.7342 26.3748V24.9063H10.0966V25.2627C9.9878 25.1221 9.84699 25.0097 9.68596 24.9349C9.52492 24.86 9.34835 24.825 9.17101 24.8326C8.77599 24.852 8.40356 25.0229 8.13083 25.31C7.85811 25.5972 7.706 25.9784 7.706 26.3748C7.706 26.7713 7.85811 27.1526 8.13083 27.4397C8.40356 27.7268 8.77599 27.8977 9.17101 27.9171C9.34835 27.9247 9.52492 27.8896 9.68596 27.8148C9.84699 27.74 9.98781 27.6275 10.0966 27.487V27.8434H10.7342V26.3748ZM8.36191 26.3748C8.37182 26.2015 8.4321 26.0349 8.53534 25.8955C8.63858 25.7561 8.78025 25.6501 8.94289 25.5904C9.10552 25.5308 9.28202 25.5202 9.4506 25.5599C9.61919 25.5996 9.77249 25.6879 9.89161 25.8139C10.0107 25.9399 10.0905 26.0981 10.121 26.269C10.1515 26.4399 10.1314 26.616 10.0633 26.7755C9.99512 26.9351 9.88187 27.0712 9.73748 27.1671C9.5931 27.2629 9.42389 27.3143 9.25071 27.3149C9.12933 27.3166 9.00892 27.293 8.89708 27.2457C8.78524 27.1983 8.68439 27.1283 8.60089 27.04C8.51739 26.9517 8.45304 26.847 8.41191 26.7325C8.37078 26.618 8.35376 26.4962 8.36191 26.3748Z" fill="#151826"/>
+                                <path d="M23.3281 2.52148H13.6723V19.915H23.3281V2.52148Z" fill="#FF5F00"/>
+                                <path d="M14.286 11.2175C14.2844 9.54239 14.6631 7.88888 15.3933 6.38215C16.1236 4.87543 17.1862 3.55497 18.5008 2.52077C16.8729 1.23811 14.9178 0.440441 12.859 0.218937C10.8002 -0.00256552 8.72073 0.361034 6.85834 1.26818C4.99594 2.17532 3.42573 3.5894 2.32718 5.34879C1.22863 7.10819 0.646057 9.14191 0.646057 11.2175C0.646057 13.2931 1.22863 15.3268 2.32718 17.0862C3.42573 18.8456 4.99594 20.2597 6.85834 21.1668C8.72073 22.074 10.8002 22.4376 12.859 22.2161C14.9178 21.9946 16.8729 21.1969 18.5008 19.9142C17.1862 18.88 16.1236 17.5596 15.3934 16.0529C14.6631 14.5461 14.2844 12.8926 14.286 11.2175Z" fill="#EB001B"/>
+                                <path d="M36.3544 11.2175C36.3545 13.2931 35.772 15.3268 34.6735 17.0862C33.575 18.8456 32.0048 20.2597 30.1425 21.1668C28.2801 22.074 26.2007 22.4376 24.142 22.2161C22.0832 21.9946 20.1281 21.1969 18.5002 19.9142C19.8137 18.879 20.8755 17.5583 21.6056 16.0518C22.3357 14.5453 22.715 12.8924 22.715 11.2175C22.715 9.54265 22.3357 7.88966 21.6056 6.38317C20.8755 4.87669 19.8137 3.55602 18.5002 2.52076C20.1281 1.2381 22.0832 0.440436 24.142 0.218936C26.2007 -0.0025648 28.2801 0.361041 30.1425 1.26819C32.0048 2.17534 33.575 3.58943 34.6735 5.34883C35.772 7.10823 36.3545 9.14194 36.3544 11.2175Z" fill="#F79E1B"/>
+                                <path d="M35.3016 18.0739V17.7178H35.4449V17.6452H35.0801V17.7178H35.2234V18.0739H35.3016ZM36.0099 18.0739V17.6445H35.8981L35.7694 17.9399L35.6408 17.6445H35.5289V18.0739H35.6079V17.75L35.7285 18.0292H35.8104L35.931 17.7493V18.0739H36.0099Z" fill="#F79E1B"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script type="text/javascript" src="js/scripts.js"></script>
+    </body>
+</html>
